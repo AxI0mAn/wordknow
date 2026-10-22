@@ -1,0 +1,209 @@
+/**
+ * Отрисовка UI и обработка DOM событий
+ */
+const UIModule = (() => {
+  // Вкладки
+  const navBtns = document.querySelectorAll('.nav-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  // Обучение DOM
+  const emptyDeckMsg = document.getElementById('empty-deck-msg');
+  const startSessionCard = document.getElementById('start-session-card');
+  const activeSessionCard = document.getElementById('active-session-card');
+  const resultsCard = document.getElementById('results-card');
+
+  const startSessionBtn = document.getElementById('start-session-btn');
+  const finishSessionBtn = document.getElementById('finish-session-btn');
+
+  const sessionProgressText = document.getElementById('session-progress-text');
+  const learnedStar = document.getElementById('learned-star');
+  const currentWordElem = document.getElementById('current-word');
+  const hardWordBadge = document.getElementById('hard-word-badge');
+  const optionsContainer = document.getElementById('options-container');
+
+  // Словарь DOM
+  const addWordForm = document.getElementById('add-word-form');
+  const inputWord = document.getElementById('input-word');
+  const inputTranslation = document.getElementById('input-translation');
+  const wordsTableBody = document.getElementById('words-table-body');
+  const totalWordsCount = document.getElementById('total-words-count');
+
+  // Импорт/Экспорт DOM
+  const importJsonFile = document.getElementById('import-json-file');
+  const exportJsonBtn = document.getElementById('export-json-btn');
+
+  // Переключение вкладок
+  navBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      navBtns.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.add('hidden'));
+
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.remove('hidden');
+
+      if (btn.dataset.tab === 'dict-tab') renderDictionary();
+      if (btn.dataset.tab === 'stats-tab') renderStats();
+    });
+  });
+
+  // Отрисовка таблицы словаря
+  const renderDictionary = () => {
+    const words = StorageModule.getWords();
+    totalWordsCount.textContent = words.length;
+    wordsTableBody.innerHTML = '';
+
+    words.forEach(w => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+                <td><strong>${w.word}</strong></td>
+                <td>${w.translation}</td>
+                <td>${w.consecutiveCorrect}/5</td>
+                <td>${w.isLearned ? '★ Выучено' : 'В процессе'}</td>
+                <td><button class="glass-btn secondary-btn" onclick="UIModule.deleteWordHandler('${w.id}')">❌</button></td>
+            `;
+      wordsTableBody.appendChild(tr);
+    });
+  };
+
+  // Удаление слова из таблицы
+  window.UIModule = {
+    deleteWordHandler: (id) => {
+      StorageModule.deleteWord(id);
+      renderDictionary();
+    }
+  };
+
+  // Добавление слова
+  addWordForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (StorageModule.addWord(inputWord.value, inputTranslation.value)) {
+      inputWord.value = '';
+      inputTranslation.value = '';
+      renderDictionary();
+    }
+  });
+
+  // Экспорт в JSON
+  exportJsonBtn.addEventListener('click', () => {
+    const data = JSON.stringify(StorageModule.getWords(), null, 2);
+    const blob = new Blob([data], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `aura_vocab_backup_${Date.now()}.json`;
+    a.click();
+  });
+
+  // Импорт из JSON
+  importJsonFile.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      if (StorageModule.importJSON(event.target.result)) {
+        alert('Слова успешно импортированы!');
+        renderDictionary();
+      } else {
+        alert('Ошибка при импорте файла JSON.');
+      }
+    };
+    reader.readAsText(file);
+  });
+
+  // Отрисовка карточки вопроса
+  const renderQuestion = () => {
+    const word = SessionModule.getCurrentWord();
+    const progress = SessionModule.getProgress();
+
+    sessionProgressText.textContent = `${progress.current} / ${progress.total}`;
+    currentWordElem.textContent = word.word;
+
+    // Звездочка
+    if (word.isLearned || word.consecutiveCorrect >= 5) {
+      learnedStar.classList.add('active');
+    } else {
+      learnedStar.classList.remove('active');
+    }
+
+    // Индикатор важного слова
+    if (word.errorsCount >= 2) {
+      hardWordBadge.classList.remove('hidden');
+    } else {
+      hardWordBadge.classList.add('hidden');
+    }
+
+    // Отрисовка вариантов
+    optionsContainer.innerHTML = '';
+    const options = SessionModule.generateOptions();
+
+    options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'glass-btn option-btn';
+      btn.textContent = opt;
+
+      btn.addEventListener('click', () => {
+        const isCorrect = SessionModule.handleAnswer(opt);
+
+        if (isCorrect) {
+          btn.classList.add('correct');
+          setTimeout(() => {
+            if (SessionModule.nextWord()) {
+              renderQuestion();
+            } else {
+              showResults();
+            }
+          }, 500);
+        } else {
+          btn.classList.add('wrong');
+          // Допускаем выбор пока не нажмет верный вариант
+        }
+      });
+
+      optionsContainer.appendChild(btn);
+    });
+  };
+
+  // Старт сеанса
+  startSessionBtn.addEventListener('click', () => {
+    if (!SessionModule.initSession()) {
+      emptyDeckMsg.classList.remove('hidden');
+      startSessionCard.classList.add('hidden');
+      return;
+    }
+
+    startSessionCard.classList.add('hidden');
+    emptyDeckMsg.classList.add('hidden');
+    activeSessionCard.classList.remove('hidden');
+    renderQuestion();
+  });
+
+  // Результаты
+  const showResults = () => {
+    activeSessionCard.classList.add('hidden');
+    resultsCard.classList.remove('hidden');
+
+    const sessionStats = SessionModule.getSessionStats();
+    document.getElementById('session-correct-count').textContent = sessionStats.correct;
+    document.getElementById('session-errors-count').textContent = sessionStats.errors;
+
+    const allWords = StorageModule.getWords();
+    document.getElementById('global-total-count').textContent = allWords.length;
+    document.getElementById('global-learned-count').textContent = allWords.filter(w => w.isLearned).length;
+  };
+
+  finishSessionBtn.addEventListener('click', () => {
+    resultsCard.classList.add('hidden');
+    startSessionCard.classList.remove('hidden');
+  });
+
+  // Отрисовка статистики
+  const renderStats = () => {
+    const words = StorageModule.getWords();
+    document.getElementById('stat-total-words').textContent = words.length;
+    document.getElementById('stat-learned-words').textContent = words.filter(w => w.isLearned).length;
+    document.getElementById('stat-hard-words').textContent = words.filter(w => w.errorsCount >= 2).length;
+  };
+
+  return { renderDictionary, renderStats };
+})();

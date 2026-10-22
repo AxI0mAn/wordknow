@@ -1,0 +1,956 @@
+[
+  {
+    "id": "1",
+    "word": "color",
+    "translation": "цвет текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "2",
+    "word": "solid",
+    "translation": "сплошной",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "3",
+    "word": "body",
+    "translation": "тело документа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "4",
+    "word": "div",
+    "translation": "блок",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "5",
+    "word": "span",
+    "translation": "строчный контейнер",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "6",
+    "word": "margin",
+    "translation": "внешний отступ",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "7",
+    "word": "padding",
+    "translation": "внутренний отступ",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "8",
+    "word": "border",
+    "translation": "граница рамки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "9",
+    "word": "background",
+    "translation": "фон",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "10",
+    "word": "font-size",
+    "translation": "размер шрифта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "11",
+    "word": "display",
+    "translation": "способ отображения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "12",
+    "word": "flexbox",
+    "translation": "гибкая компоновка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "13",
+    "word": "grid",
+    "translation": "сеточная верстка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "14",
+    "word": "anchor",
+    "translation": "гиперссылка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "15",
+    "word": "image",
+    "translation": "изображение",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "16",
+    "word": "input",
+    "translation": "поле ввода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "17",
+    "word": "button",
+    "translation": "кнопка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "18",
+    "word": "heading",
+    "translation": "заголовок",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "19",
+    "word": "paragraph",
+    "translation": "абзац текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "20",
+    "word": "list",
+    "translation": "список",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "21",
+    "word": "table",
+    "translation": "таблица",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "22",
+    "word": "row",
+    "translation": "строка таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "23",
+    "word": "cell",
+    "translation": "ячейка таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "24",
+    "word": "header",
+    "translation": "шапка страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "25",
+    "word": "footer",
+    "translation": "подвал страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "26",
+    "word": "section",
+    "translation": "секция контента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "27",
+    "word": "article",
+    "translation": "статья",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "28",
+    "word": "aside",
+    "translation": "боковая панель",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "29",
+    "word": "navigation",
+    "translation": "навигация",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "30",
+    "word": "form",
+    "translation": "форма отправки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "31",
+    "word": "label",
+    "translation": "подпись поля",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "32",
+    "word": "textarea",
+    "translation": "текстовая область",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "33",
+    "word": "select",
+    "translation": "выпадающий список",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "34",
+    "word": "option",
+    "translation": "вариант выбора",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "35",
+    "word": "script",
+    "translation": "скрипт JavaScript",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "36",
+    "word": "style",
+    "translation": "стили CSS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "37",
+    "word": "link",
+    "translation": "ссылка на ресурс",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "38",
+    "word": "meta",
+    "translation": "метаданные",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "39",
+    "word": "title",
+    "translation": "заголовок вкладки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "40",
+    "word": "head",
+    "translation": "шапка документа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "41",
+    "word": "html",
+    "translation": "корневой элемент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "42",
+    "word": "doctype",
+    "translation": "тип документа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "43",
+    "word": "canvas",
+    "translation": "холст для графики",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "44",
+    "word": "video",
+    "translation": "видео ролик",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "45",
+    "word": "audio",
+    "translation": "аудио поток",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "46",
+    "word": "source",
+    "translation": "источник медиа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "47",
+    "word": "iframe",
+    "translation": "встроенный фрейм",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "48",
+    "word": "hr",
+    "translation": "горизонтальная линия",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "49",
+    "word": "br",
+    "translation": "перенос строки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "50",
+    "word": "strong",
+    "translation": "жирный акцент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "51",
+    "word": "em",
+    "translation": "курсивный акцент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "52",
+    "word": "blockquote",
+    "translation": "цитата блока",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "53",
+    "word": "code",
+    "translation": "фрагмент кода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "54",
+    "word": "pre",
+    "translation": "форматированный текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "55",
+    "word": "ul",
+    "translation": "ненумерованный список",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "56",
+    "word": "ol",
+    "translation": "нумерованный список",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "57",
+    "word": "li",
+    "translation": "элемент списка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "58",
+    "word": "dl",
+    "translation": "список определений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "59",
+    "word": "dt",
+    "translation": "термин определения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "60",
+    "word": "dd",
+    "translation": "описание термина",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "61",
+    "word": "figure",
+    "translation": "иллюстрация блока",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "62",
+    "word": "figcaption",
+    "translation": "подпись иллюстрации",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "63",
+    "word": "main",
+    "translation": "главный контент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "64",
+    "word": "address",
+    "translation": "контактные данные",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "65",
+    "word": "time",
+    "translation": "дата или время",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "66",
+    "word": "progress",
+    "translation": "полоса прогресса",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "67",
+    "word": "meter",
+    "translation": "шкала значения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "68",
+    "word": "details",
+    "translation": "скрываемые детали",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "69",
+    "word": "summary",
+    "translation": "заголовок деталей",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "70",
+    "word": "dialog",
+    "translation": "модальное окно",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "71",
+    "word": "slot",
+    "translation": "слот веб-компонента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "72",
+    "word": "template",
+    "translation": "шаблон разметки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "73",
+    "word": "portal",
+    "translation": "портал рендеринга",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "74",
+    "word": "opacity",
+    "translation": "прозрачность",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "75",
+    "word": "visibility",
+    "translation": "видимость элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "76",
+    "word": "z-index",
+    "translation": "слой наложения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "77",
+    "word": "position",
+    "translation": "позиционирование",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "78",
+    "word": "absolute",
+    "translation": "абсолютное позиционирование",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "79",
+    "word": "relative",
+    "translation": "относительное позиционирование",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "80",
+    "word": "fixed",
+    "translation": "фиксированное положение",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "81",
+    "word": "sticky",
+    "translation": "липкое позиционирование",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "82",
+    "word": "overflow",
+    "translation": "переполнение контента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "83",
+    "word": "cursor",
+    "translation": "указатель мыши",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "84",
+    "word": "transform",
+    "translation": "трансформация",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "85",
+    "word": "transition",
+    "translation": "плавный переход",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "86",
+    "word": "animation",
+    "translation": "анимация кадров",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "87",
+    "word": "box-shadow",
+    "translation": "тень блока",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "88",
+    "word": "text-align",
+    "translation": "выравнивание текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "89",
+    "word": "line-height",
+    "translation": "высота строки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "90",
+    "word": "font-weight",
+    "translation": "жирность шрифта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "91",
+    "word": "font-family",
+    "translation": "семейство шрифтов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "92",
+    "word": "letter-spacing",
+    "translation": "межбуквенный интервал",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "93",
+    "word": "text-decoration",
+    "translation": "оформление текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "94",
+    "word": "text-transform",
+    "translation": "регистр текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "95",
+    "word": "white-space",
+    "translation": "обработка пробелов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "96",
+    "word": "flex-direction",
+    "translation": "направление флексов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "97",
+    "word": "justify-content",
+    "translation": "выравнивание по оси",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "98",
+    "word": "align-items",
+    "translation": "выравнивание поперек",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "99",
+    "word": "gap",
+    "translation": "отступ между элементами",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "100",
+    "word": "media",
+    "translation": "медиазапрос экрана",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "101",
+    "word": "box-sizing",
+    "translation": "модель расчета размеров блока",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "102",
+    "word": "min-height",
+    "translation": "минимальная высота",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "103",
+    "word": "overflow-x",
+    "translation": "видимость по горизонтали",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "104",
+    "word": "filter",
+    "translation": "визуальные фильтры (размытие)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "105",
+    "word": "max-width",
+    "translation": "максимальная ширина",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "106",
+    "word": "flex-flow",
+    "translation": "направление и обертка флексов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  }
+]

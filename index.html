@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuristic Vocab PWA</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e0e5ec">
+
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/glassmorphism.css">
+  <link rel="stylesheet" href="css/theme-light.css" id="theme-link-light">
+  <link rel="stylesheet" href="css/theme-dark.css" id="theme-link-dark">
+</head>
+
+<body>
+  <div class="background-decor">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="app-container glass-panel">
+    <header class="app-header">
+      <h1 class="logo-title">WORD<span>KNOW</span></h1>
+      <div class="header-actions">
+        <button id="theme-toggle-btn" class="icon-btn glass-btn" title="Сменить тему">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Главное меню / Навигация -->
+    <nav class="app-nav">
+      <button class="nav-btn active" data-tab="learn-tab">Обучение</button>
+      <button class="nav-btn" data-tab="dict-tab">Словарь</button>
+      <button class="nav-btn" data-tab="stats-tab">Статистика</button>
+    </nav>
+
+    <main class="app-content">
+      <!-- Вкладка: Обучение -->
+      <section id="learn-tab" class="tab-content active">
+        <!-- Состояние: Нет слов -->
+        <div id="empty-deck-msg" class="glass-card hidden">
+          <p>В вашем словаре пока нет слов (или мало слов для старта).</p>
+          <p>Перейдите во вкладку <strong>Словарь</strong> и добавьте хотя бы 4 слова!</p>
+        </div>
+
+        <!-- Состояние: Начать сеанс -->
+        <div id="start-session-card" class="glass-card text-center ready-session">
+          <h2>Готовы к тренировке?</h2>
+          <p class="subtitle">Сеанс включает до 20 случайных слов с приоритетом для сложных.</p>
+          <button id="start-session-btn" class="glass-btn primary-btn glow-effect">Начать сеанс</button>
+        </div>
+
+        <!-- Состояние: Активный сеанс -->
+        <div id="active-session-card" class="glass-card hidden">
+          <div class="session-top-bar">
+            <span id="session-progress-text">1 / 20</span>
+            <div class="learned-status-badge" title="Статус освоения">
+              <span id="learned-star" class="star-icon">★</span>
+            </div>
+          </div>
+
+          <div class="word-display-area">
+            <span class="word-label">Слово:</span>
+            <h2 id="current-word" class="target-word">Word</h2>
+            <span id="hard-word-badge" class="hard-badge hidden">⚠️ Трудное слово</span>
+          </div>
+
+          <div id="options-container" class="options-grid">
+            <!-- Динамически заменяется 4 вариантами -->
+          </div>
+        </div>
+
+        <!-- Состояние: Итоги сеанса -->
+        <div id="results-card" class="glass-card hidden">
+          <h2>Сеанс завершен!</h2>
+          <div class="results-summary">
+            <div class="res-box">
+              <span class="res-value" id="session-correct-count">0</span>
+              <span class="res-label">Правильных ответов в сеансе</span>
+            </div>
+            <div class="res-box">
+              <span class="res-value" id="session-errors-count">0</span>
+              <span class="res-label">Ошибок в сеансе</span>
+            </div>
+          </div>
+
+          <hr class="glass-divider">
+
+          <h3>Глобальный прогресс</h3>
+          <div class="results-summary">
+            <div class="res-box">
+              <span class="res-value" id="global-total-count">0</span>
+              <span class="res-label">Всего слов в базе</span>
+            </div>
+            <div class="res-box">
+              <span class="res-value" id="global-learned-count">0</span>
+              <span class="res-label">Выучено (5/5)</span>
+            </div>
+          </div>
+
+          <button id="finish-session-btn" class="glass-btn primary-btn margin-top-lg">Вернуться в меню</button>
+        </div>
+      </section>
+
+      <!-- Вкладка: Словарь -->
+      <section id="dict-tab" class="tab-content hidden">
+        <div class="glass-card">
+          <h3>Добавить новое слово</h3>
+          <form id="add-word-form" class="form-grid">
+            <input type="text" id="input-word" placeholder="Слово (напр. Serendipity)" required class="glass-input">
+            <input type="text" id="input-translation" placeholder="Перевод (напр. Интуитивная находка)" required
+              class="glass-input">
+            <button type="submit" class="glass-btn primary-btn">Добавить</button>
+          </form>
+        </div>
+
+        <div class="glass-card margin-top-md">
+          <h3>Импорт / Экспорт JSON</h3>
+          <div class="file-actions">
+            <label for="import-json-file" class="glass-btn secondary-btn file-label">
+              📂 Импортировать JSON
+            </label>
+            <input type="file" id="import-json-file" accept=".json" class="hidden-input">
+            <button id="export-json-btn" class="glass-btn secondary-btn">💾 Экспортировать JSON</button>
+          </div>
+        </div>
+
+        <div class="glass-card margin-top-md">
+          <h3>Список слов (<span id="total-words-count">0</span>)</h3>
+          <div class="table-wrapper">
+            <table class="glass-table">
+              <thead>
+                <tr>
+                  <th>Слово</th>
+                  <th>Перевод</th>
+                  <th>Прогресс</th>
+                  <th>Статус</th>
+                  <th>Действие</th>
+                </tr>
+              </thead>
+              <tbody id="words-table-body">
+                <!-- Строки заменяются динамически -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Вкладка: Статистика -->
+      <section id="stats-tab" class="tab-content hidden">
+        <div class="glass-card">
+          <h2>Общая статистика</h2>
+          <div class="stats-overview">
+            <div class="stat-item">
+              <span class="stat-num" id="stat-total-words">0</span>
+              <span class="stat-title">Всего слов в хранилище</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" id="stat-learned-words">0</span>
+              <span class="stat-title">Полностью выучено</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" id="stat-hard-words">0</span>
+              <span class="stat-title">Сложных слов (≥2 ошибок)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Скрипты -->
+  <script src="js/storage.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/pwa.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+[data-theme="dark"] {
+  --bg-color: #0f172a;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  --blob-1-color: #312e81;
+  --blob-2-color: #581c87;
+  --blob-3-color: #1e1b4b;
+
+  --glass-bg: rgba(30, 41, 59, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  --card-bg: rgba(30, 41, 59, 0.4);
+  --btn-bg: rgba(51, 65, 85, 0.5);
+  --btn-secondary-bg: rgba(51, 65, 85, 0.8);
+  --input-bg: rgba(15, 23, 42, 0.6);
+  --nav-active-bg: rgba(51, 65, 85, 0.7);
+
+  --accent-color: #a855f7;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --accent-glow: rgba(168, 85, 247, 0.4);
+
+  --neu-shadow-sm: 3px 3px 6px #090d16, -3px -3px 6px #15213e;
+  --neu-shadow-md: 6px 6px 12px #090d16, -6px -6px 12px #15213e;
+  --star-inactive: #475569;
+}
