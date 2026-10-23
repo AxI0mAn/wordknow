@@ -165,6 +165,12 @@ body {
   gap: 12px;
 }
 
+.tab-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+}
+
 .dictionary-selector-group {
   display: flex;
   gap: 10px;
