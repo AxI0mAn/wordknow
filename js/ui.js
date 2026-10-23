@@ -28,26 +28,59 @@ const UIModule = (() => {
   const wordsTableBody = document.getElementById('words-table-body');
   const totalWordsCount = document.getElementById('total-words-count');
 
+  // Словарь DOM выбор элемента
+  const dictionarySelect = document.getElementById('dictionary-select');
+  const createDictBtn = document.getElementById('create-dict-btn');
+  const deleteDictBtn = document.getElementById('delete-dict-btn');
+
   // Импорт/Экспорт DOM
   const importJsonFile = document.getElementById('import-json-file');
   const exportJsonBtn = document.getElementById('export-json-btn');
 
-  // Переключение вкладок
-  navBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      navBtns.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.add('hidden'));
+  // Отрисовка селектора словарей
+  const renderDictionarySelector = () => {
+    const dictionaries = StorageModule.getDictionariesList();
+    dictionarySelect.innerHTML = '';
 
-      btn.classList.add('active');
-      document.getElementById(btn.dataset.tab).classList.remove('hidden');
-
-      if (btn.dataset.tab === 'dict-tab') renderDictionary();
-      if (btn.dataset.tab === 'stats-tab') renderStats();
+    dictionaries.forEach(dict => {
+      const option = document.createElement('option');
+      option.value = dict.id;
+      option.textContent = `${dict.name} (${dict.count} слов)`;
+      if (dict.isActive) option.selected = true;
+      dictionarySelect.appendChild(option);
     });
+  };
+
+  // Переключение словаря в селекте
+  dictionarySelect.addEventListener('change', (e) => {
+    StorageModule.setActiveDictionary(e.target.value);
+    renderDictionary();
   });
 
-  // Отрисовка таблицы словаря
+  // Создание нового словаря
+  createDictBtn.addEventListener('click', () => {
+    const name = prompt('Введите название нового словаря:', 'Мой словарь');
+    if (name) {
+      StorageModule.createDictionary(name);
+      renderDictionarySelector();
+      renderDictionary();
+    }
+  });
+
+  // Удаление текущего словаря
+  deleteDictBtn.addEventListener('click', () => {
+    const activeId = StorageModule.getActiveDictionaryId();
+    if (confirm('Вы уверены, что хотите удалить текущий словарь со всеми словами?')) {
+      if (StorageModule.deleteDictionary(activeId)) {
+        renderDictionarySelector();
+        renderDictionary();
+      }
+    }
+  });
+
+  // Общая функция обновления вкладки словаря
   const renderDictionary = () => {
+    renderDictionarySelector();
     const words = StorageModule.getWords();
     totalWordsCount.textContent = words.length;
     wordsTableBody.innerHTML = '';
@@ -64,6 +97,79 @@ const UIModule = (() => {
       wordsTableBody.appendChild(tr);
     });
   };
+
+  // Экспорт словаря в JSON (теперь экспортирует целиком текущий словарь с названием)
+  exportJsonBtn.addEventListener('click', () => {
+    const dictionaries = StorageModule.getData ? StorageModule.getData() : null; // или через метод
+    // Собираем объект текущего активного словаря
+    const activeId = StorageModule.getActiveDictionaryId();
+    const dictsList = StorageModule.getDictionariesList();
+    const currentMeta = dictsList.find(d => d.id === activeId);
+
+    const exportData = {
+      name: currentMeta ? currentMeta.name : 'Словарь',
+      words: StorageModule.getWords()
+    };
+
+    const data = JSON.stringify(exportData, null, 2);
+    const blob = new Blob([data], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `vocab_${currentMeta ? currentMeta.name.toLowerCase().replace(/\s+/g, '_') : 'export'}_${Date.now()}.json`;
+    a.click();
+  });
+
+  // Импорт JSON (теперь создает новый словарь из файла)
+  importJsonFile.addEventListener('change', (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const fileName = file.name.replace(/\.[^/.]+$/, ""); // имя файла без расширения как название словаря
+      if (StorageModule.importDictionaryJSON(event.target.result, fileName)) {
+        alert('Словарь успешно импортирован и активирован!');
+        renderDictionary();
+      } else {
+        alert('Ошибка при импорте файла JSON.');
+      }
+    };
+    reader.readAsText(file);
+  });
+
+  // Переключение вкладок
+  navBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      navBtns.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.add('hidden'));
+
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.remove('hidden');
+
+      if (btn.dataset.tab === 'dict-tab') renderDictionary();
+      if (btn.dataset.tab === 'stats-tab') renderStats();
+    });
+  });
+
+  // Отрисовка таблицы словаря
+  // const renderDictionary = () => {
+  //   const words = StorageModule.getWords();
+  //   totalWordsCount.textContent = words.length;
+  //   wordsTableBody.innerHTML = '';
+
+  //   words.forEach(w => {
+  //     const tr = document.createElement('tr');
+  //     tr.innerHTML = `
+  //               <td><strong>${w.word}</strong></td>
+  //               <td>${w.translation}</td>
+  //               <td>${w.consecutiveCorrect}/5</td>
+  //               <td>${w.isLearned ? '★ Выучено' : 'В процессе'}</td>
+  //               <td><button class="glass-btn secondary-btn" onclick="UIModule.deleteWordHandler('${w.id}')">❌</button></td>
+  //           `;
+  //     wordsTableBody.appendChild(tr);
+  //   });
+  // };
 
   // Удаление слова из таблицы
   window.UIModule = {

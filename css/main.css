@@ -164,3 +164,13 @@ body {
   align-items: center;
   gap: 12px;
 }
+
+.dictionary-selector-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.dictionary-selector-group select {
+  flex: 1;
+}
