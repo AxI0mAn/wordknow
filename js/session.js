@@ -93,5 +93,56 @@ const SessionModule = (() => {
     return currentIndex < currentDeck.length;
   };
 
-  return { initSession, getCurrentWord, getProgress, getSessionStats, generateOptions, handleAnswer, nextWord };
+  // --- Логика режима обучения ---
+  let studyDeck = [];
+  let studyCurrentIndex = 0;
+
+  const initStudyDeck = () => {
+    const allWords = StorageModule.getWords();
+    if (allWords.length === 0) return false;
+
+    // 1. Фильтруем невыученные слова
+    const unlearned = allWords.filter(w => !w.isLearned);
+    const pool = unlearned.length > 0 ? unlearned : allWords;
+
+    // 2. Сортируем с приоритетом по количеству ошибок (сложные первыми)
+    // Если ошибок поровну, перемешиваем случайно
+    const sortedPool = [...pool].sort((a, b) => {
+      if (b.errorsCount !== a.errorsCount) {
+        return b.errorsCount - a.errorsCount; // Больше ошибок -> выше приоритет
+      }
+      return Math.random() - 0.5;
+    });
+
+    // 3. Берем порцию до 5 слов
+    studyDeck = sortedPool.slice(0, 5);
+    studyCurrentIndex = 0;
+    return studyDeck.length > 0;
+  };
+
+  const getStudyCurrentWord = () => studyDeck[studyCurrentIndex];
+
+  const getStudyProgress = () => ({
+    current: studyCurrentIndex + 1,
+    total: studyDeck.length
+  });
+
+  const nextStudyWord = () => {
+    studyCurrentIndex++;
+    return studyCurrentIndex < studyDeck.length;
+  };
+
+  return {
+    initSession,
+    getCurrentWord,
+    getProgress,
+    getSessionStats,
+    generateOptions,
+    handleAnswer,
+    nextWord,
+    initStudyDeck,
+    getStudyCurrentWord,
+    getStudyProgress,
+    nextStudyWord
+  };
 })();

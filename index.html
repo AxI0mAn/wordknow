@@ -53,7 +53,38 @@
         <div id="start-session-card" class="glass-card text-center ready-session">
           <h2>Готовы к тренировке?</h2>
           <p class="subtitle">Сеанс включает до 20 случайных слов с приоритетом для сложных.</p>
-          <button id="start-session-btn" class="glass-btn primary-btn glow-effect">Начать сеанс</button>
+
+          <div class="session-start-actions">
+            <button id="start-study-btn" class="glass-btn secondary-btn glow-effect">📖 Учить слова</button>
+            <button id="start-session-btn" class="glass-btn primary-btn glow-effect">🎓 Начать тест</button>
+          </div>
+        </div>
+
+        <!-- Состояние: Режим предварительного обучения (по 5 слов) -->
+        <div id="study-mode-card" class="glass-card text-center hidden">
+          <div class="session-top-bar">
+            <span id="study-progress-text">1 / 5</span>
+            <span class="study-badge">📖 Режим обучения</span>
+          </div>
+
+          <!-- Прогресс-бар на 10 секунд -->
+          <div class="progress-bar-wrapper">
+            <div id="study-progress-fill" class="progress-bar-fill"></div>
+          </div>
+
+          <div class="word-display-area study-word-area">
+            <span class="word-label">Термин:</span>
+            <h2 id="study-target-word" class="target-word">Word</h2>
+
+            <div class="translation-divider"></div>
+
+            <span class="word-label">Перевод:</span>
+            <p id="study-target-translation" class="target-translation">Перевод</p>
+          </div>
+
+          <button id="study-next-btn" class="glass-btn primary-btn margin-top-md">
+            Дальше ➔
+          </button>
         </div>
 
         <!-- Состояние: Активный сеанс -->
@@ -246,6 +277,20 @@
         </div>
       </section>
     </main>
+  </div>
+
+  <!-- Модальное окно завершения порции обучения -->
+  <div id="study-complete-modal" class="modal-overlay hidden">
+    <div class="glass-card modal-card text-center">
+      <div class="modal-icon">🎉</div>
+      <h3>Отличная работа!</h3>
+      <p class="subtitle">Порция из 5 слов пройдена. Хотите изучить следующую порцию или вернуться на главный экран?</p>
+
+      <div class="modal-actions">
+        <button id="modal-cancel-btn" class="glass-btn secondary-btn">В меню</button>
+        <button id="modal-continue-btn" class="glass-btn primary-btn glow-effect">Учить ещё 5 слов</button>
+      </div>
+    </div>
   </div>
 
   <!-- Скрипты -->

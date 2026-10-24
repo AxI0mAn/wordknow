@@ -311,5 +311,113 @@ const UIModule = (() => {
     document.getElementById('stat-hard-words').textContent = words.filter(w => w.errorsCount >= 2).length;
   };
 
+  // модалка 
+  const studyModal = document.getElementById('study-complete-modal');
+  const modalContinueBtn = document.getElementById('modal-continue-btn');
+  const modalCancelBtn = document.getElementById('modal-cancel-btn');
+
+  // Элементы DOM для режима обучения
+  const startStudyBtn = document.getElementById('start-study-btn');
+  const studyModeCard = document.getElementById('study-mode-card');
+  const studyProgressText = document.getElementById('study-progress-text');
+  const studyProgressFill = document.getElementById('study-progress-fill');
+  const studyTargetWord = document.getElementById('study-target-word');
+  const studyTargetTranslation = document.getElementById('study-target-translation');
+  const studyNextBtn = document.getElementById('study-next-btn');
+
+  let studyTimerId = null;
+  let studyProgressIntervalId = null;
+  const STUDY_DURATION_MS = 20000; // 20 секунд
+
+  // Отрисовка текущего слова в обучении
+  const renderStudyWord = () => {
+    clearStudyTimers();
+
+    const word = SessionModule.getStudyCurrentWord();
+    const progress = SessionModule.getStudyProgress();
+
+    studyProgressText.textContent = `${progress.current} / ${progress.total}`;
+    studyTargetWord.textContent = word.word;
+    studyTargetTranslation.textContent = word.translation;
+
+    // Запуск плавной анимации прогресс-бара
+    let startTime = Date.now();
+    studyProgressFill.style.width = '0%';
+
+    studyProgressIntervalId = setInterval(() => {
+      let elapsed = Date.now() - startTime;
+      let percent = Math.min((elapsed / STUDY_DURATION_MS) * 100, 100);
+      studyProgressFill.style.width = `${percent}%`;
+    }, 50);
+
+    // Таймер автоматического перехода через 10 секунд
+    studyTimerId = setTimeout(() => {
+      handleStudyNextStep();
+    }, STUDY_DURATION_MS);
+  };
+
+  const clearStudyTimers = () => {
+    if (studyTimerId) clearTimeout(studyTimerId);
+    if (studyProgressIntervalId) clearInterval(studyProgressIntervalId);
+  };
+
+  const handleStudyNextStep = () => {
+    clearStudyTimers();
+
+    if (SessionModule.nextStudyWord()) {
+      renderStudyWord(); // Показываем следующее слово из порции
+    } else {
+      // Порция из 5 слов завершена — показываем красивое модальное окно вместо confirm
+      studyModal.classList.remove('hidden');
+    }
+  };
+
+  // Нажатие "Учить ещё 5 слов"
+  if (modalContinueBtn) {
+    modalContinueBtn.addEventListener('click', () => {
+      studyModal.classList.add('hidden');
+
+      if (SessionModule.initStudyDeck()) {
+        renderStudyWord();
+      } else {
+        alert('В словаре больше нет слов!');
+        closeStudyMode();
+      }
+    });
+  }
+
+  // Нажатие "В меню"
+  if (modalCancelBtn) {
+    modalCancelBtn.addEventListener('click', () => {
+      studyModal.classList.add('hidden');
+      closeStudyMode();
+    });
+  }
+
+  const closeStudyMode = () => {
+    clearStudyTimers();
+    studyModeCard.classList.add('hidden');
+    startSessionCard.classList.remove('hidden');
+  };
+
+  // Привязка событий
+  if (startStudyBtn) {
+    startStudyBtn.addEventListener('click', () => {
+      if (!SessionModule.initStudyDeck()) {
+        alert('Словарь пуст! Добавьте слова во вкладке "Словарь".');
+        return;
+      }
+      startSessionCard.classList.add('hidden');
+      studyModeCard.classList.remove('hidden');
+      renderStudyWord();
+    });
+  }
+
+  if (studyNextBtn) {
+    studyNextBtn.addEventListener('click', () => {
+      handleStudyNextStep(); // Сбрасывает таймер 10 сек и сразу переходит дальше
+    });
+  }
+
   return { renderDictionary, renderStats };
 })();
