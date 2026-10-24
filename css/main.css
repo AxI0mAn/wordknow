@@ -180,3 +180,48 @@ body {
 .dictionary-selector-group select {
   flex: 1;
 }
+
+.app-intro-card {
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.intro-title {
+  margin-bottom: 10px;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+}
+
+.intro-text {
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.intro-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.intro-feature-item {
+  background: var(--input-bg);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  border: 1px solid var(--glass-border);
+}
+
+.intro-feature-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+  .intro-features-grid {
+    grid-template-columns: 1fr;
+  }
+}

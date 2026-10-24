@@ -1,0 +1,992 @@
+[
+  {
+    "id": "js_basic_1",
+    "word": "let",
+    "translation": "объявление переменной с блочной областью видимости и возможностью переприсвоения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_2",
+    "word": "const",
+    "translation": "объявление константы (переменной, значение которой нельзя переопределить)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_3",
+    "word": "var",
+    "translation": "устаревший способ объявления переменной с функциональной областью видимости",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_4",
+    "word": "String",
+    "translation": "примитивный тип данных: текстовая строка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_5",
+    "word": "Number",
+    "translation": "примитивный тип данных: числовое значение (как целое, так и дробное)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_6",
+    "word": "Boolean",
+    "translation": "логический тип данных, принимающий значения true или false",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_7",
+    "word": "null",
+    "translation": "специальное значение, обозначающее намеренное отсутствие объекта или значения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_8",
+    "word": "undefined",
+    "translation": "значение переменной, которой еще не было присвоено значение",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_9",
+    "word": "Object",
+    "translation": "сложный тип данных: коллекция пар «ключ-значение»",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_10",
+    "word": "Array",
+    "translation": "упорядоченная коллекция (массив) элементов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_11",
+    "word": "Symbol",
+    "translation": "уникальный и неизменяемый примитивный тип данных, используемый как идентификатор свойств",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_12",
+    "word": "BigInt",
+    "translation": "тип данных для работы с целыми числами произвольной длины",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_13",
+    "word": "typeof",
+    "translation": "оператор, возвращающий строку с указанием типа данных операнда",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_14",
+    "word": "=== (Strict Equality)",
+    "translation": "строгое равенство (проверяет совпадение значений И типов без приведения)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_15",
+    "word": "!== (Strict Inequality)",
+    "translation": "строгое неравенство (проверяет несовпадение значений или типов)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_16",
+    "word": "Ternary Operator (a ? b : c)",
+    "translation": "тернарный оператор: сокращенное условие (если a истинно, вернуть b, иначе c)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_17",
+    "word": "Nullish Coalescing (??)",
+    "translation": "оператор нулевого слияния: возвращает правый операнд, только если левый равен null или undefined",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_18",
+    "word": "Optional Chaining (?.)",
+    "translation": "опциональная цепочка: предотвращает ошибку при обращении к несуществующим свойствам (null/undefined)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_19",
+    "word": "if ... else",
+    "translation": "условная конструкция выполнения кода по условию",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_20",
+    "word": "switch ... case",
+    "translation": "конструкция для выбора одного из множества вариантов значений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_21",
+    "word": "for loop",
+    "translation": "классический цикл с счетчиком для многократного выполнения кода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_22",
+    "word": "for ... of",
+    "translation": "цикл для перебора значений итерируемых объектов (массивов, строк и др.)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_23",
+    "word": "for ... in",
+    "translation": "цикл для перебора всех перечисляемых свойств (ключей) объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_24",
+    "word": "while loop",
+    "translation": "цикл, выполняющий блок кода до тех пор, пока условие остается истинным",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_25",
+    "word": "break / continue",
+    "translation": "break — прерывает цикл; continue — переходит к следующей итерации цикла",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_26",
+    "word": "function declaration",
+    "translation": "объявление функции с помощью ключевого слова function (подвержено всплытию/hoisting)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_27",
+    "word": "function expression",
+    "translation": "функциональное выражение: сохранение анонимной функции в переменную",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_28",
+    "word": "arrow function (() => {})",
+    "translation": "стрелочная функция: компактный синтаксис, не имеющий собственного this и arguments",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_29",
+    "word": "return",
+    "translation": "инструкция завершения выполнения функции и возврата значения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_30",
+    "word": "default parameters",
+    "translation": "параметры функции по умолчанию, используемые если аргумент не передан",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_31",
+    "word": "rest parameters (...args)",
+    "translation": "синтаксис сборки неограниченного числа аргументов функции в один массив",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_32",
+    "word": "spread operator (...arr)",
+    "translation": "оператор раскладывания элементов массива или свойств объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_33",
+    "word": "callback function",
+    "translation": "функция обратного вызова, передаваемая в другую функцию в качестве аргумента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_34",
+    "word": "closure (замыкание)",
+    "translation": "способность функции запоминать и получать доступ к переменным из внешней области видимости",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_35",
+    "word": "pure function",
+    "translation": "чистая функция: без побочных эффектов, всегда возвращает один результат при одинаковых входных данных",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_36",
+    "word": "Scope (Область видимости)",
+    "translation": "контекст/зона доступности переменных (глобальная, функциональная, блочная)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_37",
+    "word": "Hoisting (Всплытие)",
+    "translation": "механизм поднятия объявлений функций и переменных var в начало области видимости",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_38",
+    "word": "Array.prototype.push()",
+    "translation": "добавляет один или несколько элементов в конец массива и возвращает новую длину",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_39",
+    "word": "Array.prototype.pop()",
+    "translation": "удаляет последний элемент из массива и возвращает его",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_40",
+    "word": "Array.prototype.shift()",
+    "translation": "удаляет первый элемент из массива и возвращает его",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_41",
+    "word": "Array.prototype.unshift()",
+    "translation": "добавляет элементы в начало массива и возвращает новую длину",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_42",
+    "word": "Array.prototype.forEach()",
+    "translation": "выполняет указанную функцию один раз для каждого элемента массива",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_43",
+    "word": "Array.prototype.map()",
+    "translation": "создает новый массив с результатом вызова функции для каждого элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_44",
+    "word": "Array.prototype.filter()",
+    "translation": "создает новый массив со всеми элементами, прошедшими проверку в функции",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_45",
+    "word": "Array.prototype.reduce()",
+    "translation": "сворачивает массив в одно значение, последовательно применяя функцию-аккумулятор",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_46",
+    "word": "Array.prototype.find()",
+    "translation": "возвращает значение первого элемента массива, удовлетворяющего условию",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_47",
+    "word": "Array.prototype.findIndex()",
+    "translation": "возвращает индекс первого элемента массива, удовлетворяющего условию (или -1)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_48",
+    "word": "Array.prototype.includes()",
+    "translation": "проверяет, содержит ли массив определенный элемент (возвращает true/false)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_49",
+    "word": "Array.prototype.some()",
+    "translation": "проверяет, удовлетворяет ли ХОТЯ БЫ ОДИН элемент массива условию",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_50",
+    "word": "Array.prototype.every()",
+    "translation": "проверяет, удовлетворяют ли ВСЕ элементы массива условию",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_51",
+    "word": "Array.prototype.slice()",
+    "translation": "возвращает новый массив, содержащую копию части исходного массива",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_52",
+    "word": "Array.prototype.splice()",
+    "translation": "изменяет содержимое массива (удаляет, заменяет или добавляет элементы на месте)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_53",
+    "word": "Array.prototype.concat()",
+    "translation": "объединяет два или более массива в один новый массив",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_54",
+    "word": "Array.prototype.join()",
+    "translation": "объединяет все элементы массива в одну строку с указанным разделителем",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_55",
+    "word": "Destructuring Assignment",
+    "translation": "деструктуризация: извлечение значений из массивов или объектов в отдельные переменные",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_56",
+    "word": "Object.keys()",
+    "translation": "возвращает массив собственных ключей (имен свойств) объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_57",
+    "word": "Object.values()",
+    "translation": "возвращает массив значений собственных свойств объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_58",
+    "word": "Object.entries()",
+    "translation": "возвращает массив пар [ключ, значение] собственных свойств объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_59",
+    "word": "Object.assign()",
+    "translation": "копирует значения всех собственных перечисляемых свойств из одного или более объектов в целевой",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_60",
+    "word": "this",
+    "translation": "ключевое слово, ссылающееся на текущий контекст выполнения кода или объект",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_61",
+    "word": "Function.prototype.bind()",
+    "translation": "создает новую функцию с принудительно привязанным контекстом this",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_62",
+    "word": "Function.prototype.call() / apply()",
+    "translation": "вызывает функцию с явным указанием this (call принимает аргументы через запятую, apply — массивом)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_63",
+    "word": "class",
+    "translation": "синтаксический сахар для создания функций-конструкторов и работы с прототипами",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_64",
+    "word": "constructor",
+    "translation": "специальный метод класса для создания и инициализации объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_65",
+    "word": "extends / super",
+    "translation": "extends — наследование класса; super — вызов конструктора или методов родительского класса",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_66",
+    "word": "new",
+    "translation": "оператор создания экземпляра объекта из функции-конструктора или класса",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_67",
+    "word": "Prototype (Прототип)",
+    "translation": "механизм, с помощью которого объекты JavaScript наследуют свойства друг от друга",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_68",
+    "word": "Promise",
+    "translation": "объект, представляющий результат успешного или неудачного завершения асинхронной операции",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_69",
+    "word": "Promise.then() / .catch() / .finally()",
+    "translation": "методы обработки успешного результата (.then), ошибки (.catch) и завершения (.finally) промиса",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_70",
+    "word": "Promise.all()",
+    "translation": "принимает массив промисов и ждет выполнения всех (или первого падения в ошибку)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_71",
+    "word": "async / await",
+    "translation": "удобный синтаксис работы с промисами, делающий асинхронный код похожим на синхронный",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_72",
+    "word": "setTimeout()",
+    "translation": "вызывает функцию один раз по истечении указанного количества миллисекунд",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_73",
+    "word": "setInterval()",
+    "translation": "повторно вызывает функцию через равные интервалы времени в миллисекундах",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_74",
+    "word": "clearTimeout() / clearInterval()",
+    "translation": "отменяет запланированное выполнение таймера setTimeout или setInterval",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_75",
+    "word": "try ... catch ... finally",
+    "translation": "конструкция обработки ошибок при выполнении кода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_76",
+    "word": "throw new Error()",
+    "translation": "генерация исключения (ошибки) вручную",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_77",
+    "word": "DOM (Document Object Model)",
+    "translation": "объектная модель документа: представление HTML-страницы в виде дерева объектов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_78",
+    "word": "document.querySelector()",
+    "translation": "возвращает первый элемент страницы, соответствующий указанному CSS-селектору",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_79",
+    "word": "document.querySelectorAll()",
+    "translation": "возвращает статический список (NodeList) всех элементов, соответствующих CSS-селектору",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_80",
+    "word": "document.getElementById()",
+    "translation": "быстрый поиск элемента DOM по его уникальному атрибуту id",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_81",
+    "word": "document.createElement()",
+    "translation": "создает новый HTML-элемент в памяти",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_82",
+    "word": "Node.appendChild() / Node.append()",
+    "translation": "вставляет элемент или узел в конец родительского элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_83",
+    "word": "Node.removeChild() / Element.remove()",
+    "translation": "удаляет дочерний узел из DOM или сам элемент соответственно",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_84",
+    "word": "Element.addEventListener()",
+    "translation": "регистрирует обработчик события (click, input и т.д.) на элементе",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_85",
+    "word": "Element.removeEventListener()",
+    "translation": "удаляет ранее зарегистрированный обработчик события",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_86",
+    "word": "Event Object (event / e)",
+    "translation": "объект события, автоматически передаваемый в обработчик (содержит target, type и др.)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_87",
+    "word": "event.preventDefault()",
+    "translation": "отменяет стандартное поведение браузера для данного события (например, отправку формы)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_88",
+    "word": "event.stopPropagation()",
+    "translation": "прекращает дальнейшее всплытие (bubbling) события по дереву DOM",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_89",
+    "word": "event.target vs event.currentTarget",
+    "translation": "target — элемент, на котором произошло событие; currentTarget — элемент, на котором висит слушатель",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_90",
+    "word": "Element.classList (add, remove, toggle)",
+    "translation": "удобный интерфейс для работы с CSS-классами элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_91",
+    "word": "Element.setAttribute() / getAttribute()",
+    "translation": "задает или получает значение произвольного HTML-атрибута элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_92",
+    "word": "HTMLElement.dataset",
+    "translation": "объект для доступа к пользовательским data-* атрибутам элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_93",
+    "word": "textContent vs innerHTML",
+    "translation": "textContent — безопасная установка только текста; innerHTML — распарсивание и вставка HTML-тегов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_94",
+    "word": "fetch()",
+    "translation": "встроенный метод для выполнения сетевых асинхронных HTTP-запросов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_95",
+    "word": "JSON.stringify()",
+    "translation": "преобразует объект или значение JavaScript в JSON-строку",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_96",
+    "word": "JSON.parse()",
+    "translation": "преобразует JSON-строку в соответствующий объект или значение JavaScript",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_97",
+    "word": "localStorage.setItem() / getItem()",
+    "translation": "сохраняет или извлекает строковые данные из постоянного хранилища браузера",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_98",
+    "word": "sessionStorage",
+    "translation": "хранилище данных браузера, ограниченное текущей сессией вкладки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_99",
+    "word": "NaN (Not-a-Number)",
+    "translation": "значение, обозначающее результат невалидной математической операции",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_100",
+    "word": "isNaN() / Number.isNaN()",
+    "translation": "проверка значения на принадлежность к NaN",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_101",
+    "word": "parseInt() / parseFloat()",
+    "translation": "преобразует строку в целое число или число с плавающей точкой",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_102",
+    "word": "Math.random()",
+    "translation": "возвращает псевдослучайное число с плавающей точкой в диапазоне от 0 (включительно) до 1",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_103",
+    "word": "Math.floor() / Math.ceil() / Math.round()",
+    "translation": "округление числа: floor — вниз, ceil — вверх, round — по математическим правилам",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_104",
+    "word": "Template Literals (`${var}`)",
+    "translation": "шаблонные строки: позволяют делать многострочный ввод и удобную интерполяцию выражений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_105",
+    "word": "String.prototype.includes() / startsWith()",
+    "translation": "проверка, содержит ли строка подстроку или начинается ли с нее (возвращает true/false)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_106",
+    "word": "String.prototype.trim()",
+    "translation": "удаляет пробельные символы в начале и в конце строки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_107",
+    "word": "String.prototype.split()",
+    "translation": "разбивает строку на массив подстрок по указанному разделителю",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_108",
+    "word": "import / export",
+    "translation": "инструкции ES6-модулей для экспорта и импорта функций, объектов или переменных между файлами",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_109",
+    "word": "Set",
+    "translation": "коллекция уникальных значений (дубликаты автоматически удаляются)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "js_basic_110",
+    "word": "Map",
+    "translation": "структура данных «ключ-значение», где ключом может выступать любой тип (включая объекты)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  }
+]

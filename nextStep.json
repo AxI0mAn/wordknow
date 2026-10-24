@@ -1,0 +1,1380 @@
+﻿[
+  {
+    "id": "html_vocab_1",
+    "word": "html",
+    "translation": "язык гипертекстовой разметки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_2",
+    "word": "<p>",
+    "translation": "абзац текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_3",
+    "word": "<progress>",
+    "translation": "прогресс выполнения задачи",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_4",
+    "word": "<q>",
+    "translation": "краткая цитата",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_5",
+    "word": "<rt>",
+    "translation": "произношение иероглифов (руби)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_6",
+    "word": "<s>",
+    "translation": "неактуальный перечеркнутый текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_7",
+    "word": "<samp>",
+    "translation": "вывод данных программы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_8",
+    "word": "defer",
+    "translation": "атрибут script: отложенная загрузка скрипта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_9",
+    "word": "<section>",
+    "translation": "раздел документа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_10",
+    "word": "<small>",
+    "translation": "мелкий шрифт",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_11",
+    "word": "<style>",
+    "translation": "внутренние стили CSS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_12",
+    "word": "<source>",
+    "translation": "альтернативный медиаресурс",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_13",
+    "word": "<span>",
+    "translation": "строчный контейнер",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_14",
+    "word": "<strong>",
+    "translation": "важный жирный текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_15",
+    "word": "scoped",
+    "translation": "атрибут style: локальные стили элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_16",
+    "word": "scope",
+    "translation": "атрибут table: область заголовка ячейки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_17",
+    "word": "<!--text-->",
+    "translation": "комментарий в коде",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_18",
+    "word": "<sup>",
+    "translation": "надстрочный текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_19",
+    "word": "<sub>",
+    "translation": "подстрочный текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_20",
+    "word": "<table>",
+    "translation": "таблица",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_21",
+    "word": "<meter>",
+    "translation": "скалярное значение в диапазоне",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_22",
+    "word": "sortable",
+    "translation": "сортируемый элемент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_23",
+    "word": "<tr>",
+    "translation": "строка таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_24",
+    "word": "<td>",
+    "translation": "ячейка таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_25",
+    "word": "<tbody>",
+    "translation": "тело таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_26",
+    "word": "<caption>",
+    "translation": "заголовок таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_27",
+    "word": "<tfoot>",
+    "translation": "нижний колонтитул таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_28",
+    "word": "<title>",
+    "translation": "заголовок веб-страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_29",
+    "word": "<u>",
+    "translation": "подчеркнутый текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_30",
+    "word": "<ul>",
+    "translation": "ненумерованный список",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_31",
+    "word": "<var>",
+    "translation": "переменная в коде",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_32",
+    "word": "muted",
+    "translation": "атрибут audio/video: выключение звука",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_33",
+    "word": "poster",
+    "translation": "атрибут video: заставка видео",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_34",
+    "word": "<wbr>",
+    "translation": "возможное место переноса строки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_35",
+    "word": "<col>",
+    "translation": "параметры столбца таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_36",
+    "word": "<mark>",
+    "translation": "выделенный маркером текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_37",
+    "word": "<a href=\"\">",
+    "translation": "адрес гиперссылки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_38",
+    "word": "<a target=\"_blank\">",
+    "translation": "открытие ссылки в новой вкладке",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_39",
+    "word": "relate",
+    "translation": "связь / отношение",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_40",
+    "word": "compression",
+    "translation": "сжатие данных",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_41",
+    "word": "resolutions",
+    "translation": "разрешение экрана",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_42",
+    "word": "smoothing",
+    "translation": "сглаживание графики",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_43",
+    "word": "<img src>",
+    "translation": "путь к изображению",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_44",
+    "word": "<img srcset>",
+    "translation": "адаптивные варианты изображения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_45",
+    "word": "<dd>",
+    "translation": "описание термина в списке",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_46",
+    "word": "<menu>",
+    "translation": "список команд меню",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_47",
+    "word": "<menuitem>",
+    "translation": "пункт интерактивного меню",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_48",
+    "word": "<th>",
+    "translation": "ячейка-заголовок таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_49",
+    "word": "<thead>",
+    "translation": "шапка таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_50",
+    "word": "<colgroup>",
+    "translation": "группа столбцов таблицы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_51",
+    "word": "<div>",
+    "translation": "блочный контейнер",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_52",
+    "word": "<header>",
+    "translation": "шапка сайта или раздела",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_53",
+    "word": "<footer>",
+    "translation": "подвал сайта или раздела",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_54",
+    "word": "<main>",
+    "translation": "основное содержимое страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_55",
+    "word": "<article>",
+    "translation": "независимая статья",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_56",
+    "word": "<aside>",
+    "translation": "боковая панель / сайдбар",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_57",
+    "word": "<details>",
+    "translation": "скрываемый блок с деталями",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_58",
+    "word": "<dialog>",
+    "translation": "модальное окно",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_59",
+    "word": "<summary>",
+    "translation": "заголовок для элемента details",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_60",
+    "word": "<data>",
+    "translation": "машинно-читаемое значение",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_61",
+    "word": "<head>",
+    "translation": "метаданные и настройки документа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_62",
+    "word": "<meta>",
+    "translation": "метаданные HTML-документа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_63",
+    "word": "<base>",
+    "translation": "базовый URL для всех ссылок",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_64",
+    "word": "<script>",
+    "translation": "скрипт JavaScript",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_65",
+    "word": "<noscript>",
+    "translation": "контент для браузеров без JS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_66",
+    "word": "<embed>",
+    "translation": "внедренный внешний объект",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_67",
+    "word": "<object>",
+    "translation": "интерактивный внешний объект",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_68",
+    "word": "<param>",
+    "translation": "параметр для тега object",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_69",
+    "word": "<template>",
+    "translation": "скрытый шаблон разметки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_70",
+    "word": "<time>",
+    "translation": "дата или время",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_71",
+    "word": "<form>",
+    "translation": "форма отправки данных",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_72",
+    "word": "<input>",
+    "translation": "поле ввода данных",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_73",
+    "word": "<textarea>",
+    "translation": "многострочное поле ввода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_74",
+    "word": "<button>",
+    "translation": "интерактивная кнопка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_75",
+    "word": "<select>",
+    "translation": "выпадающий список",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_76",
+    "word": "<optgroup>",
+    "translation": "группа опций в списке",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_77",
+    "word": "<option>",
+    "translation": "пункт выпадающего списка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_78",
+    "word": "<label>",
+    "translation": "текстовая метка поля ввода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_79",
+    "word": "<fieldset>",
+    "translation": "группа элементов формы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_80",
+    "word": "<legend>",
+    "translation": "подпись для fieldset",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_81",
+    "word": "<datalist>",
+    "translation": "автозаполнение для input",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_82",
+    "word": "<output>",
+    "translation": "результат вычислений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_83",
+    "word": "<iframe>",
+    "translation": "встроенный фрейм страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_84",
+    "word": "<img>",
+    "translation": "изображение",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_85",
+    "word": "<map>",
+    "translation": "карта кликабельных зон изображения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_86",
+    "word": "<area>",
+    "translation": "активная зона на карте изображения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_87",
+    "word": "<canvas>",
+    "translation": "холст для рисования графики через JS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_88",
+    "word": "<figcaption>",
+    "translation": "подпись к иллюстрации figure",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_89",
+    "word": "<figure>",
+    "translation": "контент с иллюстрацией и подписью",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_90",
+    "word": "<picture>",
+    "translation": "контейнер адаптивных изображений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_91",
+    "word": "<svg>",
+    "translation": "контейнер векторной графики",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_92",
+    "word": "<audio>",
+    "translation": "аудиопроигрыватель",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_93",
+    "word": "<track>",
+    "translation": "текстовые дорожки для медиа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_94",
+    "word": "<video>",
+    "translation": "видеопроигрыватель",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_95",
+    "word": "<a>",
+    "translation": "гиперссылка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_96",
+    "word": "<link>",
+    "translation": "связь с внешним ресурсом (CSS)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_97",
+    "word": "<nav>",
+    "translation": "блок навигационных ссылок",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_98",
+    "word": "<ol>",
+    "translation": "нумерованный список",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_99",
+    "word": "<li>",
+    "translation": "элемент списка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_100",
+    "word": "<dl>",
+    "translation": "список определений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_101",
+    "word": "<dt>",
+    "translation": "термин в списке определений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_102",
+    "word": "<abbr>",
+    "translation": "аббревиатура или акроним",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_103",
+    "word": "<address>",
+    "translation": "контактные данные автора",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_104",
+    "word": "<b>",
+    "translation": "полужирный текст без акцента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_105",
+    "word": "<bdi>",
+    "translation": "изоляция разнонаправленного текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_106",
+    "word": "<bdo>",
+    "translation": "переопределение направления текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_107",
+    "word": "<blockquote>",
+    "translation": "блок цитирования",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_108",
+    "word": "<cite>",
+    "translation": "название источника цитаты",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_109",
+    "word": "<code>",
+    "translation": "фрагмент программного кода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_110",
+    "word": "<del>",
+    "translation": "удаленный из документа текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_111",
+    "word": "<dfn>",
+    "translation": "определяемый термин",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_112",
+    "word": "<i>",
+    "translation": "курсивный текст с другим тоном",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_113",
+    "word": "<ins>",
+    "translation": "вставленный в документ текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_114",
+    "word": "<kbd>",
+    "translation": "ввод данных с клавиатуры",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_115",
+    "word": "<pre>",
+    "translation": "предварительно отформатированный текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_116",
+    "word": "<rp>",
+    "translation": "скобки для поддержки руби-аннотаций",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_117",
+    "word": "<ruby>",
+    "translation": "аннотация руби для иероглифов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_118",
+    "word": "oncopy=\"return false\"",
+    "translation": "запрет копирования текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_119",
+    "word": "translate=\"no\"",
+    "translation": "запрет автоматического перевода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_120",
+    "word": "<br>",
+    "translation": "одиночный тег: перенос строки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_121",
+    "word": "<hr>",
+    "translation": "одиночный тег: горизонтальная линия",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_122",
+    "word": "<area>",
+    "translation": "одиночный тег: зона на карте изображения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_123",
+    "word": "<param>",
+    "translation": "одиночный тег: параметр объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+{
+    "id": "html_vocab_124",
+    "word": "class",
+    "translation": "универсальный атрибут: класс для стилизации",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_125",
+    "word": "id",
+    "translation": "универсальный атрибут: уникальный идентификатор",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_126",
+    "word": "style",
+    "translation": "универсальный атрибут: инлайн-стили CSS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_127",
+    "word": "title",
+    "translation": "универсальный атрибут: подсказка при наведении",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_128",
+    "word": "lang",
+    "translation": "универсальный атрибут: язык содержимого",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_129",
+    "word": "data-*",
+    "translation": "универсальный атрибут: хранение пользовательских данных",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_130",
+    "word": "hidden",
+    "translation": "универсальный атрибут: скрывает элемент со страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_131",
+    "word": "tabindex",
+    "translation": "универсальный атрибут: порядок перехода клавишей Tab",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_132",
+    "word": "src",
+    "translation": "атрибут для img/script/iframe: путь к источнику",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_133",
+    "word": "alt",
+    "translation": "атрибут для img: альтернативный текст картинки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_134",
+    "word": "href",
+    "translation": "атрибут для a/link: URL-адрес ссылки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_135",
+    "word": "type",
+    "translation": "атрибут для input/button/script: тип элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_136",
+    "word": "value",
+    "translation": "атрибут для input/option: значение элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_137",
+    "word": "placeholder",
+    "translation": "атрибут для input/textarea: подсказка в поле ввода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_138",
+    "word": "disabled",
+    "translation": "атрибут полей/кнопок: отключение элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_139",
+    "word": "checked",
+    "translation": "атрибут для checkbox/radio: состояние отмечено",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_140",
+    "word": "selected",
+    "translation": "атрибут для option: выбранный пункт списка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_141",
+    "word": "readonly",
+    "translation": "атрибут input: только для чтения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_142",
+    "word": "required",
+    "translation": "атрибут input: обязательное поле для заполнения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_143",
+    "word": "action",
+    "translation": "атрибут form: URL для отправки данных формы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_144",
+    "word": "method",
+    "translation": "атрибут form: HTTP-метод отправки (GET/POST)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_145",
+    "word": "name",
+    "translation": "атрибут элементов формы: имя параметра",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_146",
+    "word": "rel",
+    "translation": "атрибут link/a: отношение между документами",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_147",
+    "word": "async",
+    "translation": "атрибут script: асинхронная загрузка скрипта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_148",
+    "word": "controls",
+    "translation": "атрибут audio/video: показ панели управления",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_149",
+    "word": "autoplay",
+    "translation": "атрибут audio/video: автозапуск медиа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_150",
+    "word": "loop",
+    "translation": "атрибут audio/video: зацикливание воспроизведения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_151",
+    "word": "rows",
+    "translation": "атрибут textarea: количество строк текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_152",
+    "word": "cols",
+    "translation": "атрибут textarea: ширина в символах",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "html_vocab_153",
+    "word": "colspan",
+    "translation": "атрибут td/th: объединение ячеек по горизонтали",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  }
+]
+]

@@ -1,0 +1,947 @@
+[
+  {
+    "id": "css_scss_1",
+    "word": "*",
+    "translation": "универсальный селектор (выбирает абсолютно все элементы)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_2",
+    "word": ".class",
+    "translation": "селектор класса (выбирает элементы с указанным классом)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_3",
+    "word": "#id",
+    "translation": "селектор по идентификатору ID (выбирает уникальный элемент)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_4",
+    "word": "element, element",
+    "translation": "группировка селекторов (применяет стили к нескольким элементам)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_5",
+    "word": "element1 element2",
+    "translation": "селектор потомков (выбирает элементы на любом уровне вложенности)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_6",
+    "word": "element > element2",
+    "translation": "дочерний селектор (выбирает только прямых детей элемента)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_7",
+    "word": "element + element2",
+    "translation": "смежный селектор (выбирает элемент, идущий непосредственно за данным)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_8",
+    "word": "element ~ element2",
+    "translation": "родственный селектор (выбирает все последующие сиблинги элемента)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_9",
+    "word": "[attribute^=value]",
+    "translation": "селектор атрибута, значение которого начинается с указанного текста",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_10",
+    "word": "[attribute$=value]",
+    "translation": "селектор атрибута, значение которого заканчивается на указанный текст",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_11",
+    "word": "[attribute*=value]",
+    "translation": "селектор атрибута, значение которого содержит указанную подстроку",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_12",
+    "word": ":hover",
+    "translation": "псевдокласс: состояние наведения курсора мыши",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_13",
+    "word": ":focus",
+    "translation": "псевдокласс: получение фокуса элементом (например, полем ввода)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_14",
+    "word": ":focus-within",
+    "translation": "псевдокласс: фокус внутри элемента или любого его дочернего элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_15",
+    "word": ":nth-child(n)",
+    "translation": "псевдокласс: выбирает дочерний элемент по его порядковому номеру или формуле",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_16",
+    "word": ":nth-of-type(n)",
+    "translation": "псевдокласс: выбирает дочерний элемент определенного типа по номеру",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_17",
+    "word": ":not(selector)",
+    "translation": "псевдокласс отрицания: выбирает все элементы, кроме указанного селектора",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_18",
+    "word": ":is(selector)",
+    "translation": "псевдокласс сопоставления: группирует селекторы и снижает дублирование кода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_19",
+    "word": ":where(selector)",
+    "translation": "псевдокласс сопоставления: аналогичен :is(), но имеет нулевую специфичность (0,0,0)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_20",
+    "word": ":has(selector)",
+    "translation": "псевдокласс родителя: выбирает элемент, если он содержит указанный селектор внутри",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_21",
+    "word": "::before",
+    "translation": "псевдоэлемент: создает виртуальный контент перед содержимым элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_22",
+    "word": "::after",
+    "translation": "псевдоэлемент: создает виртуальный контент после содержимого элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_23",
+    "word": "::placeholder",
+    "translation": "псевдоэлемент: стилизация текста-подсказки в полях ввода",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_24",
+    "word": "box-sizing: border-box",
+    "translation": "расчет размеров элемента включает внутренние отступы (padding) и рамки (border)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_25",
+    "word": "display: flex",
+    "translation": "включает блочную флекс-модель для контейнера и его прямых потомков",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_26",
+    "word": "display: grid",
+    "translation": "включает сеточную модель раскладки (Grid Layout)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_27",
+    "word": "flex-direction",
+    "translation": "задает направление главной оси флекс-контейнера (row, column)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_28",
+    "word": "justify-content",
+    "translation": "выравнивает флекс/грид элементы вдоль главной оси (main axis)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_29",
+    "word": "align-items",
+    "translation": "выравнивает элементы флекс-контейнера вдоль поперечной оси (cross axis)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_30",
+    "word": "flex-wrap: wrap",
+    "translation": "позволяет флекс-элементам переноситься на новую строку при нехватке места",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_31",
+    "word": "flex-flow",
+    "translation": "сокращение для одновременного задания flex-direction и flex-wrap",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_32",
+    "word": "align-content",
+    "translation": "выравнивает многострочные ряды флекс-элементов по поперечной оси",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_33",
+    "word": "flex-grow",
+    "translation": "коэффициент растяжения флекс-элемента при наличии свободного места",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_34",
+    "word": "flex-shrink",
+    "translation": "коэффициент сжатия флекс-элемента при недостатке места",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_35",
+    "word": "flex-basis",
+    "translation": "базовый начальный размер флекс-элемента до распределения пространства",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_36",
+    "word": "flex",
+    "translation": "сокращенное свойство для flex-grow, flex-shrink и flex-basis",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_37",
+    "word": "align-self",
+    "translation": "переопределяет выравнивание align-items для конкретного отдельного элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_38",
+    "word": "order",
+    "translation": "изменяет визуальный порядок отображения флекс или грид элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_39",
+    "word": "grid-template-columns",
+    "translation": "задает размеры и количество колонок в Grid-контейнере",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_40",
+    "word": "grid-template-rows",
+    "translation": "задает размеры и количество строк в Grid-контейнере",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_41",
+    "word": "gap",
+    "translation": "задает расстояния (отступы) между столбцами и строками в Flexbox и Grid",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_42",
+    "word": "repeat(auto-fit, minmax(200px, 1fr))",
+    "translation": "адаптивная сетка Grid без медиазапросов с автозаполнением колонок",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_43",
+    "word": "grid-column: 1 / -1",
+    "translation": "растягивает элемент на всю ширину сетки (от первой линии до последней)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_44",
+    "word": "grid-template-areas",
+    "translation": "определяет макет сетки с помощью именованных текстовых областей",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_45",
+    "word": "grid-area",
+    "translation": "привязывает элемент к именованной области в grid-template-areas",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_46",
+    "word": "position: relative",
+    "translation": "относительное позиционирование элемента без выпадания из потока",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_47",
+    "word": "position: absolute",
+    "translation": "абсолютное позиционирование относительно ближайшего позиционированного предка",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_48",
+    "word": "position: fixed",
+    "translation": "фиксированное позиционирование относительно окна браузера (viewport)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_49",
+    "word": "position: sticky",
+    "translation": "липкое позиционирование: элемент переключается из относительного в фиксированное при прокрутке",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_50",
+    "word": "z-index",
+    "translation": "порядок наложения позиционированных элементов по оси Z (глубина)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_51",
+    "word": "overflow: hidden",
+    "translation": "скрывает контент, выходящий за пределы границ элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_52",
+    "word": "transform: translate(x, y)",
+    "translation": "сдвигает элемент по горизонтали и вертикали без нарушения потока",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_53",
+    "word": "transform: scale(val)",
+    "translation": "изменяет масштаб (размер) элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_54",
+    "word": "transform: rotate(deg)",
+    "translation": "поворачивает элемент на заданный угол (в градусах deg или радианах rad)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_55",
+    "word": "transition: all 0.3s ease",
+    "translation": "плавный переход между состояниями элемента за 0.3 секунды",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_56",
+    "word": "@keyframes name { ... }",
+    "translation": "директива создания ключевых кадров для сложных анимаций",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_57",
+    "word": "animation-fill-mode: forwards",
+    "translation": "сохраняет стили последнего ключевого кадра после завершения анимации",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_58",
+    "word": "animation-iteration-count: infinite",
+    "translation": "делает воспроизведение анимации бесконечным",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_59",
+    "word": "pointer-events: none",
+    "translation": "делает элемент «прозрачным» для событий мыши и кликов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_60",
+    "word": "user-select: none",
+    "translation": "запрещает пользователю выделять текст внутри элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_61",
+    "word": "object-fit: cover",
+    "translation": "масштабирует картинку/видео с сохранением пропорций, заполняя весь блок",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_62",
+    "word": "aspect-ratio: 16 / 9",
+    "translation": "задает фиксированное соотношение сторон элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_63",
+    "word": "clamp(min, val, max)",
+    "translation": "функция CSS: задает диапазон значений с идеальным средним и границами min/max",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_64",
+    "word": "calc(100% - 20px)",
+    "translation": "функция CSS: вычисляет динамическое значение выражения с разными единицами",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_65",
+    "word": "var(--custom-variable)",
+    "translation": "функция получения значения нативной CSS-переменной",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_66",
+    "word": ":root",
+    "translation": "глобальный псевдокласс корневого элемента (обычно html) для объявления глобальных переменных",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_67",
+    "word": "backdrop-filter: blur(10px)",
+    "translation": "применяет графические эффекты (например, размытие) к области ЗА элементом",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_68",
+    "word": "will-change: transform",
+    "translation": "подсказывает браузеру оптимизировать производительность перед изменением свойства",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_69",
+    "word": "@media (max-width: 768px)",
+    "translation": "медиазапрос для применения стилей на экранах шириной до 768px",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_70",
+    "word": "$variable-name",
+    "translation": "объявление переменной в SCSS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_71",
+    "word": "$color: red !default",
+    "translation": "присваивает значение переменной SCSS, только если она еще не была определена",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_72",
+    "word": "Nesting (Вложенность)",
+    "translation": "написание вложенных правил CSS друг в друга для отражения структуры HTML",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_73",
+    "word": "& (Ampersand)",
+    "translation": "амперсанд в SCSS: ссылка на родительский селектор",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_74",
+    "word": "&:hover",
+    "translation": "применение состояния :hover к родительскому селектору через амперсанд",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_75",
+    "word": "&__element",
+    "translation": "создание БЭМ-элемента путем добавления суффикса к родительскому классу",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_76",
+    "word": "&--modifier",
+    "translation": "создание БЭМ-модификатора с использованием родительского класса",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_77",
+    "word": "@mixin name($arg) { ... }",
+    "translation": "объявление миксина (шаблона переиспользуемого кода) в SCSS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_78",
+    "word": "@include mixin-name",
+    "translation": "подключение и выполнение ранее созданного миксина",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_79",
+    "word": "@content",
+    "translation": "директива в миксине для вставки внешнего блока стилей (часто для медиазапросов)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_80",
+    "word": "%placeholder-name",
+    "translation": "создание селектора-плейсхолдера в SCSS (не компилируется в итоговый CSS)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_81",
+    "word": "@extend %placeholder",
+    "translation": "наследование стилей от селектора или плейсхолдера с группировкой правил",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_82",
+    "word": "@use 'module'",
+    "translation": "современный импорт SCSS-файлов с инкапсуляцией и областью видимости",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_83",
+    "word": "@use 'module' as m",
+    "translation": "импорт SCSS-модуля с определением пользовательского псевдонима (алиаса)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_84",
+    "word": "@forward 'module'",
+    "translation": "проброс и реэкспорт функций, миксинов и переменных из другого модуля SCSS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_85",
+    "word": "@import 'file'",
+    "translation": "устаревший способ импорта SCSS (объединяет всё в одну глобальную область)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_86",
+    "word": "_partial.scss",
+    "translation": "партиал: служебный файл SCSS (нижнее подчеркивание предотвращает отдельную компиляцию в CSS)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_87",
+    "word": "#{$variable}",
+    "translation": "интерполяция SCSS: вставка значения переменной в селекторы, свойства или строки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_88",
+    "word": "@function name($arg) { @return $val; }",
+    "translation": "создание пользовательской функции в SCSS для вычисления и возврата значений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_89",
+    "word": "@if $condition { ... } @else { ... }",
+    "translation": "условное ветвление для применения стилей в зависимостях от значений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_90",
+    "word": "@for $i from 1 through 5 { ... }",
+    "translation": "цикл SCSS: выполнение кода фиксированное количество раз (включая 5)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_91",
+    "word": "@each $item in $list { ... }",
+    "translation": "цикл SCSS: перебор каждого элемента списка или карты значений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_92",
+    "word": "@while $condition { ... }",
+    "translation": "цикл SCSS: выполнение блока кода, пока условие истинно",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_93",
+    "word": "map-get($map, key)",
+    "translation": "функция SCSS для получения значения из структуры данных Map (карта/объект)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_94",
+    "word": "math.div($a, $b)",
+    "translation": "современный деление в SCSS через математический модуль sass:math",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_95",
+    "word": "color.adjust($color, $lightness: 10%)",
+    "translation": "модульная функция SCSS для точной настройки оттенка, светлоты или прозрачности цвета",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_96",
+    "word": "darken($color, 10%)",
+    "translation": "устаревшая функция SCSS для затемнения цвета на заданный процент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_97",
+    "word": "lighten($color, 10%)",
+    "translation": "устаревшая функция SCSS для осветления цвета на заданный процент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_98",
+    "word": "rgba($color, 0.5)",
+    "translation": "добавление степени прозрачности к существующему SCSS цвету",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_99",
+    "word": "@error 'Message'",
+    "translation": "выбрасывает ошибку компиляции SCSS с выводом сообщения в консоль",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_100",
+    "word": "@warn 'Message'",
+    "translation": "выводит предупреждение в консоль при компиляции SCSS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_101",
+    "word": "mixin-name($arg: default)",
+    "translation": "параметр миксина по умолчанию, если аргумент не был передан",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_102",
+    "word": "$args...",
+    "translation": "Rest-параметры (varargs) в SCSS для передачи неограниченного числа аргументов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_103",
+    "word": "meta.type-of($value)",
+    "translation": "возвращает тип данных переменной SCSS (number, string, color, list и т.д.)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_104",
+    "word": "@at-root selector { ... }",
+    "translation": "директива SCSS: выносит указанный блок стилей в корень документа, игнорируя вложенность",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "css_scss_105",
+    "word": "!important",
+    "translation": "принудительно повышает приоритет CSS-правила до максимального",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  }
+]

@@ -1,9 +1,17 @@
 /**
- * Модуль взаимодействия с localStorage (с поддержкой нескольких словарей)
+ * Модуль взаимодействия с localStorage (с поддержкой нескольких словарей и автозагрузкой из папки vocab/)
  */
 const StorageModule = (() => {
   const MAIN_STORAGE_KEY = 'aura_vocab_data';
   const OLD_STORAGE_KEY = 'aura_vocab_pairs'; // Старый ключ для миграции
+
+  // Список файлов по умолчанию, которые нужно подтянуть из папки vocab/
+  const DEFAULT_DICTIONARIES_FILES = [
+    { path: './vocab/dictHTML.json', defaultName: 'HTML & CSS Базовый' },
+    { path: './vocab/css_scss.json', defaultName: 'CSS & SCSS Глубокий' },
+    { path: './vocab/javascript_basic.json', defaultName: 'JavaScript Основы' },
+    { path: './vocab/svelte_5.json', defaultName: 'Svelte 5' }
+  ];
 
   // Инициализация структуры и миграция старых данных
   const initStorage = () => {
@@ -110,13 +118,13 @@ const StorageModule = (() => {
     return true;
   };
 
-  // Получить все слова АКТИВНОГО словаря (полная совместимость со старым методом)
+  // Получить все слова АКТИВНОГО словаря
   const getWords = () => {
     const data = getData();
     return data.dictionaries[data.activeDictionaryId]?.words || [];
   };
 
-  // Сохранить полный массив слов в АКТИВНЫЙ словарь (полная совместимость)
+  // Сохранить полный массив слов в АКТИВНЫЙ словарь
   const saveWords = (words) => {
     const data = getData();
     if (data.dictionaries[data.activeDictionaryId]) {
@@ -234,30 +242,36 @@ const StorageModule = (() => {
     }
   };
 
-  // Проверка и автозагрузка dictHTML.json, если словарей вообще нет или активный пустой
+  // Автоматическая загрузка ВСЕХ файлов словарей из папки vocab/ при первом пуске (или если словарей мало)
   const initDefaultWords = async () => {
-    const currentWords = getWords();
-    if (currentWords.length === 0) {
-      try {
-        const response = await fetch('./dictHTML.json');
-        if (response.ok) {
-          const fileData = await response.json();
-          let wordsArray = [];
-          let dictName = 'HTML & CSS Словарь';
+    const data = getData();
 
-          if (Array.isArray(fileData)) {
-            wordsArray = fileData;
-          } else if (fileData && typeof fileData === 'object' && Array.isArray(fileData.words)) {
-            wordsArray = fileData.words;
-            if (fileData.name) dictName = fileData.name;
-          }
+    // Проверяем: если у нас всего один словарь и он пустой, либо словарей вообще мало
+    const dictKeys = Object.keys(data.dictionaries);
+    const isFirstRunEmpty = dictKeys.length === 1 && data.dictionaries[dictKeys[0]].words.length === 0;
 
-          if (wordsArray.length > 0) {
-            const data = getData();
-            const activeId = data.activeDictionaryId;
-            if (data.dictionaries[activeId]) {
-              data.dictionaries[activeId].name = dictName;
-              data.dictionaries[activeId].words = wordsArray.map(item => ({
+    if (isFirstRunEmpty) {
+      // Удаляем пустой начальный авто-словарь, раз мы будем загружать реальные файлы
+      const emptyId = dictKeys[0];
+      let firstLoadedId = null;
+
+      for (const fileInfo of DEFAULT_DICTIONARIES_FILES) {
+        try {
+          const response = await fetch(fileInfo.path);
+          if (response.ok) {
+            const fileData = await response.json();
+            let wordsArray = [];
+            let dictName = fileInfo.defaultName;
+
+            if (Array.isArray(fileData)) {
+              wordsArray = fileData;
+            } else if (fileData && typeof fileData === 'object' && Array.isArray(fileData.words)) {
+              wordsArray = fileData.words;
+              if (fileData.name) dictName = fileData.name;
+            }
+
+            if (wordsArray.length > 0) {
+              const validWords = wordsArray.map(item => ({
                 id: item.id || Date.now().toString() + Math.random().toString(36).substr(2, 4),
                 word: item.word.trim(),
                 translation: item.translation.trim(),
@@ -266,13 +280,35 @@ const StorageModule = (() => {
                 correctCount: item.correctCount || 0,
                 isLearned: !!item.isLearned
               }));
-              saveData(data);
-              console.log('Дефолтный словарь успешно загружен из dictHTML.json');
+
+              const newDictId = 'dict_file_' + Date.now() + Math.random().toString(36).substr(2, 3);
+              data.dictionaries[newDictId] = {
+                id: newDictId,
+                name: dictName,
+                words: validWords
+              };
+
+              if (!firstLoadedId) {
+                firstLoadedId = newDictId;
+              }
+              console.log(`Словарь "${dictName}" успешно загружен из ${fileInfo.path}`);
             }
           }
+        } catch (e) {
+          console.log(`Не удалось загрузить файл ${fileInfo.path} (проверьте запуск через локальный сервер).`);
         }
-      } catch (e) {
-        console.log('Автоматическая загрузка dictHTML.json пропущена (требуется локальный сервер/Live Server).');
+      }
+
+      // Если удалось загрузить файлы, делаем первый из них активным и удаляем пустой временный
+      if (firstLoadedId) {
+        delete data.dictionaries[emptyId];
+        data.activeDictionaryId = firstLoadedId;
+        saveData(data);
+
+        // Обновляем интерфейс, если он уже отрисован
+        if (typeof UIModule !== 'undefined' && UIModule.renderDictionary) {
+          UIModule.renderDictionary();
+        }
       }
     }
   };
@@ -288,6 +324,7 @@ const StorageModule = (() => {
     getDictionariesList,
     getActiveDictionaryId,
     setActiveDictionary,
+    createDirectory: createDictionary, // синоним на всякий случай
     createDictionary,
     deleteDictionary,
     importDictionaryJSON

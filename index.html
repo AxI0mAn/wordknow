@@ -22,7 +22,7 @@
     <div class="blob blob-3"></div>
   </div>
 
-  <div class="app-container glass-panel">
+  <div id="start-page" class="app-container glass-panel">
     <header class="app-header">
       <h1 class="logo-title">WORD<span>KNOW</span></h1>
       <div class="header-actions">
@@ -35,7 +35,7 @@
     <!-- Главное меню / Навигация -->
     <nav class="app-nav">
       <button class="nav-btn active" data-tab="learn-tab">Обучение</button>
-      <button class="nav-btn" data-tab="dict-tab">Словарь</button>
+      <button class="nav-btn" data-tab="dict-tab">Словари</button>
       <button class="nav-btn" data-tab="stats-tab">Статистика</button>
     </nav>
 
@@ -55,56 +55,115 @@
           <button id="start-session-btn" class="glass-btn primary-btn glow-effect">Начать сеанс</button>
         </div>
 
-        <!-- Состояние: Активный сеанс -->
-        <div id="active-session-card" class="glass-card hidden">
-          <div class="session-top-bar">
-            <span id="session-progress-text">1 / 20</span>
-            <div class="learned-status-badge" title="Статус освоения">
-              <span id="learned-star" class="star-icon">★</span>
+        <!-- Информационный блок о приложении (Описание для новичков) -->
+        <div class="glass-card margin-top-lg app-intro-card">
+          <h3 class="intro-title">🚀 Добро пожаловать в wordKnow</h3>
+          <p class="intro-text">
+            Это современный тренажер для эффективного заучивания терминов. Приложение создано, чтобы помочь вам легко и
+            увлекательно освоить программирование, превратив скучную зубрежку в привычку.
+          </p>
+
+          <div class="intro-features-grid">
+            <div class="intro-feature-item">
+              <strong>🧠 Умный повтор</strong>
+              <span>Сложные слова попадаются чаще, а выученные отмечаются звёздочкой ★ (после 5 верных ответов
+                подряд).</span>
+            </div>
+            <div class="intro-feature-item">
+              <strong>📚 Готовые словари</strong>
+              <span>В системе уже вшиты базовые наборы по HTML, CSS, SCSS, JavaScript и Svelte 5.</span>
             </div>
           </div>
 
-          <div class="word-display-area">
-            <span class="word-label">Слово:</span>
-            <h2 id="current-word" class="target-word">Word</h2>
-            <span id="hard-word-badge" class="hard-badge hidden">⚠️ Трудное слово</span>
-          </div>
-
-          <div id="options-container" class="options-grid">
-            <!-- Динамически заменяется 4 вариантами -->
-          </div>
-        </div>
-
-        <!-- Состояние: Итоги сеанса -->
-        <div id="results-card" class="glass-card hidden">
-          <h2>Сеанс завершен!</h2>
-          <div class="results-summary">
-            <div class="res-box">
-              <span class="res-value" id="session-correct-count">0</span>
-              <span class="res-label">Правильных ответов в сеансе</span>
+          <h3 class="intro-title">Возможности приложения</h3>
+          <div class="intro-features-grid">
+            <div class="intro-feature-item">
+              <strong>Интервальное повторение и адаптивность:</strong>
+              <p>Приложение автоматически отслеживает сложный для вас материал.
+                Если на вопрос дважды дан неверный ответ, слово получает статус сложного и начинает попадаться чаще.
+                Слово считается полностью выученным после 5 правильных ответов подряд, после чего на карточке загорается
+                особая звезда.</p>
             </div>
-            <div class="res-box">
-              <span class="res-value" id="session-errors-count">0</span>
-              <span class="res-label">Ошибок в сеансе</span>
+            <div class="intro-feature-item">
+              <strong>Словари:</strong>
+              <p>Вы можете создавать, удалять и переключаться между несколькими независимыми словарями,
+                управляя своей базой знаний прямо в Приложении.</p>
             </div>
-          </div>
-
-          <hr class="glass-divider">
-
-          <h3>Глобальный прогресс</h3>
-          <div class="results-summary">
-            <div class="res-box">
-              <span class="res-value" id="global-total-count">0</span>
-              <span class="res-label">Всего слов в базе</span>
+            <div class="intro-feature-item">
+              <strong>Импорт и экспорт:</strong>
+              <p>Поддерживается удобный обмен данными через JSON-файлы, что позволяет легко делиться
+                наборами терминов или переносить их между устройствами.</p>
             </div>
-            <div class="res-box">
-              <span class="res-value" id="global-learned-count">0</span>
-              <span class="res-label">Выучено (5/5)</span>
+            <div class="intro-feature-item">
+              <strong>Автоматическая стартовая база: </strong>
+              <p>Приложение поставляется с уже готовыми глубокими словарями по HTML, CSS,
+                SCSS, JavaScript и Svelte 5, которые автоматически подгружаются при первом запуске.</p>
             </div>
           </div>
 
-          <button id="finish-session-btn" class="glass-btn primary-btn margin-top-lg">Вернуться в меню</button>
-        </div>
+          <div id="start-session-card" class="glass-card text-center ready-session">
+            <h3 class="intro-title">Чем приложение поможет новичку в программировании?</h3>
+            <p class="intro-text">Для человека, который только начинает свой путь в IT, огромным барьером становится
+              обилие специфической
+              терминологии, названий тегов, атрибутов, свойств и синтаксических конструкций. AuraVocab решает эту
+              проблему через игровую механику тестов с 4 вариантами ответов. Сеансы по 20 слов не перегружают
+              внимание, а встроенная статистика успехов позволяет наглядно видеть глобальный прогресс (сколько всего
+              терминов в базе и сколько из них уже успешно усвоено). Это превращает рутинную зубрежку в легкую
+              ежедневную привычку, закладывая прочный фундамент для уверенной работы с кодом.
+            </p>
+            <a href="#start-page" class="glass-btn primary-btn glow-effect">Начать обучение</a>
+          </div>
+
+          <!-- Состояние: Активный сеанс -->
+          <div id="active-session-card" class="glass-card hidden">
+            <div class="session-top-bar">
+              <span id="session-progress-text">1 / 20</span>
+              <div class="learned-status-badge" title="Статус освоения">
+                <span id="learned-star" class="star-icon">★</span>
+              </div>
+            </div>
+
+            <div class="word-display-area">
+              <span class="word-label">Слово:</span>
+              <h2 id="current-word" class="target-word">Word</h2>
+              <span id="hard-word-badge" class="hard-badge hidden">⚠️ Трудное слово</span>
+            </div>
+
+            <div id="options-container" class="options-grid">
+              <!-- Динамически заменяется 4 вариантами -->
+            </div>
+          </div>
+
+          <!-- Состояние: Итоги сеанса -->
+          <div id="results-card" class="glass-card hidden">
+            <h2>Сеанс завершен!</h2>
+            <div class="results-summary">
+              <div class="res-box">
+                <span class="res-value" id="session-correct-count">0</span>
+                <span class="res-label">Правильных ответов в сеансе</span>
+              </div>
+              <div class="res-box">
+                <span class="res-value" id="session-errors-count">0</span>
+                <span class="res-label">Ошибок в сеансе</span>
+              </div>
+            </div>
+
+            <hr class="glass-divider">
+
+            <h3>Глобальный прогресс</h3>
+            <div class="results-summary">
+              <div class="res-box">
+                <span class="res-value" id="global-total-count">0</span>
+                <span class="res-label">Всего слов в базе</span>
+              </div>
+              <div class="res-box">
+                <span class="res-value" id="global-learned-count">0</span>
+                <span class="res-label">Выучено (5/5)</span>
+              </div>
+            </div>
+
+            <button id="finish-session-btn" class="glass-btn primary-btn margin-top-lg">Вернуться в меню</button>
+          </div>
       </section>
 
       <!-- Вкладка: Словарь -->

@@ -1,0 +1,902 @@
+[
+  {
+    "id": "svelte5_1",
+    "word": "$state()",
+    "translation": "руна Svelte 5: объявление глубоко реактивного состояния переменной или объекта",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_2",
+    "word": "$state.raw()",
+    "translation": "руна: объявление поверхностно (shallow) реактивного состояния без создания прокси для вложенных полей",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_3",
+    "word": "$derived()",
+    "translation": "руна: объявление вычисляемого (производного) значения, автоматически обновляемого при изменении зависимостей",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_4",
+    "word": "$derived.by()",
+    "translation": "руна: вычисление сложного производного состояния с помощью функции с несколькими инструкциями или циклами",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_5",
+    "word": "$props()",
+    "translation": "руна: деструктуризация входных параметров (пропсов), передаваемых в компонент извне",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_6",
+    "word": "$bindable()",
+    "translation": "руна-обертка внутри $props(): разрешает двустороннее связывание (bind:) данного пропса с родителем",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_7",
+    "word": "$effect()",
+    "translation": "руна: запускает побочный эффект (side-effect) при монтировании и авто-обновляет его при изменении зависимостей",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_8",
+    "word": "$effect.pre()",
+    "translation": "руна: выполняет побочный эффект ДО обновления DOM браузером",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_9",
+    "word": "$inspect()",
+    "translation": "руна отладки: выводит в консоль изменения переданных реактивных состояний (замена console.log в эффектах)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_10",
+    "word": "$host()",
+    "translation": "руна: предоставляет доступ к Custom Element (shadow host) при компиляции компонента в Web Component",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_11",
+    "word": "#snippet name(args)",
+    "translation": "синтаксис Svelte 5: объявление переиспользуемого фрагмента HTML-разметки (замена устаревших слотов)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_12",
+    "word": "{@render snippetName(args)}",
+    "translation": "тег отрисовки: рендерит объявленный сниппет с переданными аргументами в указанном месте",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_13",
+    "word": "children snippet",
+    "translation": "концепция: передача дочернего контента в компонент через сниппет по умолчанию children в $props()",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_14",
+    "word": "onclick={handler}",
+    "translation": "Svelte 5 обработка событий: использование стандартных свойств DOM (onclick вместо on:click)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_15",
+    "word": "oninput={handler}",
+    "translation": "обработчик ввода текста в полях (вместо устаревшего синтаксиса on:input)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_16",
+    "word": "Event Bubbling & Callback Props",
+    "translation": "концепция Svelte 5: передача функций-обработчиков через пропсы взамен вызова createEventDispatcher",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_17",
+    "word": "bind:value={state}",
+    "translation": "двустороннее связывание элемента формы (input/select) с реактивным состоянием",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_18",
+    "word": "bind:group={array/val}",
+    "translation": "двустороннее связывание группы радиокнопок или чекбоксов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_19",
+    "word": "bind:this={elementRef}",
+    "translation": "получение прямой ссылки на DOM-узел или экземпляр компонента в переменную",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_20",
+    "word": "bind:clientWidth / clientHeight",
+    "translation": "директива автоматического отслеживания текущей ширины/высоты DOM-элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_21",
+    "word": "bind:offsetWidth / offsetHeight",
+    "translation": "отслеживание полных геометрических размеров элемента с учетом рамок и паддингов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_22",
+    "word": "{#if condition} ... {:else} ... {/if}",
+    "translation": "блок условного рендеринга разметки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_23",
+    "word": "{#each items as item, index (item.id)}",
+    "translation": "цикл перебора списков с обязательным ключом уникальности (item.id) для эффективного DOM-обновления",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_24",
+    "word": "{#await promise} ... {:then data} ... {:catch error}",
+    "translation": "блок асинхронной обработки промисов с состояниями ожидания, успеха и ошибки непосредственно в шаблоне",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_25",
+    "word": "{#key expression} ... {/key}",
+    "translation": "блок повторного уничтожения и пересоздания содержимого при изменении значения выражения",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_26",
+    "word": "{@html htmlString}",
+    "translation": "вставка необработанной строки HTML в DOM (требует осторожности из-за XSS)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_27",
+    "word": "{@debug variable}",
+    "translation": "тег отладки: останавливает выполнение скрипта (debugger) при изменении указанной переменной",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_28",
+    "word": "class:active={isCurrent}",
+    "translation": "директива условного добавления CSS-класса к элементу",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_29",
+    "word": "style:color={themeColor}",
+    "translation": "директива установки отдельного инлайн-стиля элемента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_30",
+    "word": "use:actionName={options}",
+    "translation": "директива подключения экшена (функции жизненного цикла) к DOM-узлу",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_31",
+    "word": "Action return object ({ update, destroy })",
+    "translation": "структура ответа экшена: содержит методы update (при изменении аргументов) и destroy (при демонтировании)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_32",
+    "word": "transition:fade",
+    "translation": "директива плавного проявления и исчезновения элемента при появлении/скрытии в DOM",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_33",
+    "word": "transition:fly={{ y: 20, duration: 300 }}",
+    "translation": "анимация вылета элемента с изменением координат и прозрачности",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_34",
+    "word": "transition:slide",
+    "translation": "анимация выкатывания/сворачивания элемента по вертикали",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_35",
+    "word": "in:fade / out:fly",
+    "translation": "раздельное задание анимации только на вход (in:) или только на выход (out:) элемента из DOM",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_36",
+    "word": "animate:flip",
+    "translation": "директива автоматической анимации переупорядочивания элементов списка в блоке #each",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_37",
+    "word": "onMount(() => {})",
+    "translation": "функция жизненного цикла: вызывается сразу после первого рендеринга компонента в DOM",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_38",
+    "word": "onDestroy(() => {})",
+    "translation": "функция жизненного цикла: вызывается перед размонтированием и уничтожением компонента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_39",
+    "word": "tick()",
+    "translation": "промис, который разрешается сразу после того, как Svelte применил все изменения состояния к DOM",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_40",
+    "word": "setContext(key, value)",
+    "translation": "сохранение произвольного значения в контексте текущего компонента для передачи глубоким потомкам",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_41",
+    "word": "getContext(key)",
+    "translation": "получение данных из контекста, ранее установленного вышестоящим родителем",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_42",
+    "word": "hasContext(key)",
+    "translation": "проверка наличия зарегистрированного контекста по ключу",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_43",
+    "word": "getAllContexts()",
+    "translation": "возвращает карту (Map) всех контекстов, доступных текущему компоненту",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_44",
+    "word": "Universal Reactivity (.svelte.js / .svelte.ts)",
+    "translation": "возможность использования рун ($state, $derived) вне компонентов в обычных JS/TS файлах",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_45",
+    "word": "writable(initialValue)",
+    "translation": "создание классического подписываемого стора с возможностью записи (set, update, subscribe)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_46",
+    "word": "readable(initialValue, startFn)",
+    "translation": "создание стора только для чтения (изменяемого только внутри управляющей функции)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_47",
+    "word": "derived([stores], fn)",
+    "translation": "создание стора, вычисляемого на основе одного или нескольких других сторов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_48",
+    "word": "$storeAutoSubscription",
+    "translation": "префикс $: автоматическая подписка и отписка от классических сторов внутри компонентов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_49",
+    "word": "<svelte:head>",
+    "translation": "специальный элемент для вставки тегов (<title>, <meta>, <link>) в <head> документа",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_50",
+    "word": "<svelte:window>",
+    "translation": "специальный элемент для навешивания обработчиков событий и привязок к объекту window",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_51",
+    "word": "<svelte:document>",
+    "translation": "специальный элемент для слушания событий напрямую на объекте document",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_52",
+    "word": "<svelte:body>",
+    "translation": "специальный элемент для подключения событий к тегу <body>",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_53",
+    "word": "<svelte:element this={tagName}>",
+    "translation": "динамический рендеринг HTML-тега по имени его строки (например, 'h1' или 'p')",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_54",
+    "word": "<svelte:component this={Component}>",
+    "translation": "динамический рендеринг компонента Svelte по ссылке на его класс/функцию",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_55",
+    "word": "<svelte:options runes={true} />",
+    "translation": "директива конфигурации компонента (например, явное включение или отключение режима рун)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_56",
+    "word": "<script module>",
+    "translation": "блок скрипта, выполняемый один раз при импорте модуля (общий код для всех экземпляров компонента)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_57",
+    "word": "style scoped",
+    "translation": "концепция: по умолчанию все CSS-стили внутри <style> компонента изолированы и не протекают наружу",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_58",
+    "word": ":global(selector)",
+    "translation": "CSS-модификатор: делает указанный селектор внутри <style> компонента глобальным",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_59",
+    "word": "mount(Component, { target, props })",
+    "translation": "API Svelte 5: монтирование корневого компонента в DOM-дерево (замена new Component())",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_60",
+    "word": "unmount(componentInstance)",
+    "translation": "API Svelte 5: безопасное демонтирование и уничтожение экземпляра компонента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_61",
+    "word": "hydrate(Component, { target })",
+    "translation": "гидратация серверного HTML-кода на клиенте в Svelte 5",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_62",
+    "word": "untrack(() => fn)",
+    "translation": "функция из svelte: отключает отслеживание реактивных зависимостей внутри чтения состояния",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_63",
+    "word": "SvelteMap / SvelteSet",
+    "translation": "реактивные версии встроенных коллекций Map и Set в Svelte 5 из svelte/reactivity",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_64",
+    "word": "SvelteURL / SvelteURLSearchParams",
+    "translation": "реактивная обертка над стандартом URL для удобного отслеживания параметров строки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_65",
+    "word": "+page.svelte",
+    "translation": "SvelteKit: основной компонент отображения страницы маршрута",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_66",
+    "word": "+page.js / +page.ts",
+    "translation": "SvelteKit: клиентский/изоморфный скрипт загрузки данных для страницы (load function)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_67",
+    "word": "+page.server.js / +page.server.ts",
+    "translation": "SvelteKit: скрипт, выполняемый строго на сервере (загрузка приватных данных, Form Actions)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_68",
+    "word": "+layout.svelte",
+    "translation": "SvelteKit: компонент общего макета для текущей папки и всех вложенных подмаршрутов",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_69",
+    "word": "+layout.js / +layout.server.js",
+    "translation": "SvelteKit: скрипт загрузки данных для макета Layout",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_70",
+    "word": "+server.js (API Route)",
+    "translation": "SvelteKit: обработчик REST API (GET, POST, PUT, DELETE endpoints)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_71",
+    "word": "+error.svelte",
+    "translation": "SvelteKit: компонент отображения ошибки при сбое в загрузке страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_72",
+    "word": "export async function load({ fetch, params })",
+    "translation": "SvelteKit: главная функция загрузки данных для подготовки страницы к рендеру",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_73",
+    "word": "let { data } = $props()",
+    "translation": "SvelteKit + Svelte 5: получение загруженных через load() данных внутри +page.svelte",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_74",
+    "word": "Form Actions (export const actions = { ... })",
+    "translation": "SvelteKit: серверная обработка отправки HTML-форм без написания клиенсткого JS",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_75",
+    "word": "use:enhance",
+    "translation": "SvelteKit директива: превращает стандартную отправку формы в асинхронную без перезагрузки страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_76",
+    "word": "$app/navigation (goto, invalidate, preloadCode)",
+    "translation": "SvelteKit модуль: клиенский программный переход по URL и управление кэшем",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_77",
+    "word": "$app/stores (page, navigating, updated)",
+    "translation": "SvelteKit сторы: доступ к метаданным текущего URL, состоянию перехода и обновлениям",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_78",
+    "word": "$env/static/public",
+    "translation": "SvelteKit: статичные публичные переменные окружения, доступные на клиенте",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_79",
+    "word": "$env/static/private",
+    "translation": "SvelteKit: приватные секреты (API keys), доступные ТОЛЬКО на сервере",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_80",
+    "word": "error(status, message)",
+    "translation": "SvelteKit helper: выбрасывает контролируемую HTTP-ошибку внутри load-функций",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_81",
+    "word": "redirect(status, location)",
+    "translation": "SvelteKit helper: выполняет перенаправление пользователя на другой URL",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_82",
+    "word": "fail(status, data)",
+    "translation": "SvelteKit helper: возвращает ошибки валидации формы из Form Actions обратно на клиент",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_83",
+    "word": "hooks.server.js (handle)",
+    "translation": "SvelteKit: серверные перехватчики (middleware) для каждого входящего HTTP-запроса",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_84",
+    "word": "event.locals",
+    "translation": "SvelteKit: объект для передачи данных (например, сессии пользователя) из hooks в load-функции",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_85",
+    "word": "Param Matchers ([id=integer])",
+    "translation": "SvelteKit: валидаторы параметров маршрута (например, проверка что id — это число)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_86",
+    "word": "Route Groups ((group_name))",
+    "translation": "SvelteKit: группировка папок в роутере без добавления сегмента в итоговый URL",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_87",
+    "word": "Breakout Layouts (@layout)",
+    "translation": "SvelteKit: сброс или переопределение вышестоящего Layout для конкретной страницы",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_88",
+    "word": "spring(initialValue, { stiffness, damping })",
+    "translation": "svelte/motion: физическая пружинная анимация для плавного изменения численных значений",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_89",
+    "word": "tweened(initialValue, { duration, easing })",
+    "translation": "svelte/motion: анимация постепенного плавного перехода между числами с помощью easing-функций",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_90",
+    "word": "crossfade({ fallback })",
+    "translation": "svelte/transition: парная анимация перемещения элемента из одного списка/места в другое",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_91",
+    "word": "svelte/store get()",
+    "translation": "однократное чтение значения классического стора без создания постоянной подписки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_92",
+    "word": "Signal-based Fine-grained Reactivity",
+    "translation": "концепция Svelte 5: точечное обновление конкретных узлов DOM без перерисовки всего компонента",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_93",
+    "word": "Hydration Mismatch",
+    "translation": "ошибка расхождения между HTML-кодом, сгенерированным сервером, и первичным рендером на клиенте",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_94",
+    "word": "SSR (Server-Side Rendering)",
+    "translation": "рендеринг HTML-страниц на стороне сервера перед отправкой в браузер",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_95",
+    "word": "Prerendering (export const prerender = true)",
+    "translation": "SvelteKit: генерация статических HTML-файлов во время сборки проекта (SSG)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_96",
+    "word": "CSR (export const csr = false)",
+    "translation": "SvelteKit: отключение отправки клиентского JavaScript на страницу для максимизации скорости",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_97",
+    "word": "Adapter (adapter-auto, adapter-static, adapter-node)",
+    "translation": "SvelteKit: плагины сборки для деплоя приложения на конкретные платформы (Vercel, Node server, Static HTML)",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_98",
+    "word": "Component Event Handlers as Props",
+    "translation": "паттерн Svelte 5: передача функций вида `onselect={(item) => ...}` вместо вызова dispatch()",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_99",
+    "word": "Rest Props via $props()",
+    "translation": "получение неявных пропсов: `let { class: className, ...restProps } = $props()`",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  },
+  {
+    "id": "svelte5_100",
+    "word": "pushState / replaceState (SvelteKit Navigation)",
+    "translation": "SvelteKit API: управление поверхностным роутингом (Shallow Routing) и состоянием истории без перезагрузки",
+    "consecutiveCorrect": 0,
+    "errorsCount": 0,
+    "correctCount": 0,
+    "isLearned": false
+  }
+]
