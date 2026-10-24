@@ -56,6 +56,57 @@
           <button id="start-session-btn" class="glass-btn primary-btn glow-effect">Начать сеанс</button>
         </div>
 
+        <!-- Состояние: Активный сеанс -->
+        <div id="active-session-card" class="glass-card hidden">
+          <div class="session-top-bar">
+            <span id="session-progress-text">1 / 20</span>
+            <div class="learned-status-badge" title="Статус освоения">
+              <span id="learned-star" class="star-icon">★</span>
+            </div>
+          </div>
+
+          <div class="word-display-area">
+            <span class="word-label">Слово:</span>
+            <h2 id="current-word" class="target-word">Word</h2>
+            <span id="hard-word-badge" class="hard-badge hidden">⚠️ Трудное слово</span>
+          </div>
+
+          <div id="options-container" class="options-grid">
+            <!-- Динамически заменяется 4 вариантами -->
+          </div>
+        </div>
+
+        <!-- Состояние: Итоги сеанса -->
+        <div id="results-card" class="glass-card hidden">
+          <h2>Сеанс завершен!</h2>
+          <div class="results-summary">
+            <div class="res-box">
+              <span class="res-value" id="session-correct-count">0</span>
+              <span class="res-label">Правильных ответов в сеансе</span>
+            </div>
+            <div class="res-box">
+              <span class="res-value" id="session-errors-count">0</span>
+              <span class="res-label">Ошибок в сеансе</span>
+            </div>
+          </div>
+
+          <hr class="glass-divider">
+
+          <h3>Глобальный прогресс</h3>
+          <div class="results-summary">
+            <div class="res-box">
+              <span class="res-value" id="global-total-count">0</span>
+              <span class="res-label">Всего слов в базе</span>
+            </div>
+            <div class="res-box">
+              <span class="res-value" id="global-learned-count">0</span>
+              <span class="res-label">Выучено (5/5)</span>
+            </div>
+          </div>
+
+          <button id="finish-session-btn" class="glass-btn primary-btn margin-top-lg">Вернуться в меню</button>
+        </div>
+
         <!-- Информационный блок о приложении (Описание для новичков) -->
         <div class="glass-card margin-top-lg app-intro-card">
           <h3 class="intro-title">🚀 Добро пожаловать в wordKnow</h3>
@@ -115,56 +166,7 @@
             <a href="#start-page" class="glass-btn primary-btn glow-effect">Начать обучение</a>
           </div>
 
-          <!-- Состояние: Активный сеанс -->
-          <div id="active-session-card" class="glass-card hidden">
-            <div class="session-top-bar">
-              <span id="session-progress-text">1 / 20</span>
-              <div class="learned-status-badge" title="Статус освоения">
-                <span id="learned-star" class="star-icon">★</span>
-              </div>
-            </div>
 
-            <div class="word-display-area">
-              <span class="word-label">Слово:</span>
-              <h2 id="current-word" class="target-word">Word</h2>
-              <span id="hard-word-badge" class="hard-badge hidden">⚠️ Трудное слово</span>
-            </div>
-
-            <div id="options-container" class="options-grid">
-              <!-- Динамически заменяется 4 вариантами -->
-            </div>
-          </div>
-
-          <!-- Состояние: Итоги сеанса -->
-          <div id="results-card" class="glass-card hidden">
-            <h2>Сеанс завершен!</h2>
-            <div class="results-summary">
-              <div class="res-box">
-                <span class="res-value" id="session-correct-count">0</span>
-                <span class="res-label">Правильных ответов в сеансе</span>
-              </div>
-              <div class="res-box">
-                <span class="res-value" id="session-errors-count">0</span>
-                <span class="res-label">Ошибок в сеансе</span>
-              </div>
-            </div>
-
-            <hr class="glass-divider">
-
-            <h3>Глобальный прогресс</h3>
-            <div class="results-summary">
-              <div class="res-box">
-                <span class="res-value" id="global-total-count">0</span>
-                <span class="res-label">Всего слов в базе</span>
-              </div>
-              <div class="res-box">
-                <span class="res-value" id="global-learned-count">0</span>
-                <span class="res-label">Выучено (5/5)</span>
-              </div>
-            </div>
-
-            <button id="finish-session-btn" class="glass-btn primary-btn margin-top-lg">Вернуться в меню</button>
-          </div>
       </section>
 
       <!-- Вкладка: Словарь -->

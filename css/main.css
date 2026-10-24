@@ -104,6 +104,7 @@ body {
 }
 
 .logo-title img {
+  margin-right: 16px;
   max-width: 88px;
   aspect-ratio: 1/1;
 }
