@@ -2,8 +2,8 @@
  * Модуль взаимодействия с localStorage (с поддержкой нескольких словарей и автозагрузкой из папки vocab/)
  */
 const StorageModule = (() => {
-  const MAIN_STORAGE_KEY = 'aura_vocab_data';
-  const OLD_STORAGE_KEY = 'aura_vocab_pairs'; // Старый ключ для миграции
+  const MAIN_STORAGE_KEY = 'word_know_data';
+  const OLD_STORAGE_KEY = 'word_know_pairs'; // Старый ключ для миграции
 
   // Список файлов по умолчанию, которые нужно подтянуть из папки vocab/
   const DEFAULT_DICTIONARIES_FILES = [

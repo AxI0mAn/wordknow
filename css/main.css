@@ -98,6 +98,14 @@ body {
   font-size: 1.6rem;
   letter-spacing: 2px;
   font-weight: 700;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.logo-title img {
+  max-width: 88px;
+  aspect-ratio: 1/1;
 }
 
 .logo-title span {

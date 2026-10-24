@@ -196,7 +196,7 @@ const UIModule = (() => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `aura_vocab_backup_${Date.now()}.json`;
+    a.download = `word_know_backup_${Date.now()}.json`;
     a.click();
   });
 
